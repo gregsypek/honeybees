@@ -1,0 +1,73 @@
+//COLOR VARIABLES
+$color-black:#1c140d;
+$color-white: #f2e9e1; 
+
+$color-olive: #cbe86b;
+
+$color-orange: #f9a11b;
+$color-cream: #fff169; 
+
+$color-dark-green: #1b5e20;
+$color-light-green:#c8ebc9;
+
+// FONT VARIABLES
+
+$font-primary: 'Teko',
+sans-serif;
+
+// RESPONSIVE  BREAKPOINTS
+
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px
+$bp-small: 37.5em; //600px
+$bp-smallest: 27.5em; //440px
+
+
+
+
+// :root {
+//     --black: #1c140d;
+// }
+
+body {
+    background: #3CA55C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #B5AC49, #3CA55C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #B5AC49, #3CA55C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+}
+html {
+
+    box-sizing: border-box;
+    font-family: $font-primary, sans-serif;
+    font-weight: 300;
+    font-size: 62.5%; //10px
+    color: var(--black);
+    // max-width: 1400px;
+    // margin: 0 auto;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+   
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 5px 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 2rem;
+}

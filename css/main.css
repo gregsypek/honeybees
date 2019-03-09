@@ -1,0 +1,41 @@
+body {
+  background: #3CA55C;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#B5AC49), to(#3CA55C));
+  background: linear-gradient(to right, #B5AC49, #3CA55C);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Teko", sans-serif, sans-serif;
+  font-weight: 300;
+  font-size: 62.5%;
+  color: var(--black);
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 5px 0;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2rem;
+}
+/*# sourceMappingURL=main.css.map */

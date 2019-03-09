@@ -1,0 +1,17 @@
+{
+    "version": 3,
+    "mappings": "ACgCA,AAAA,IAAI,CAAC;EACD,UAAU,EAAE,OAAO;EAAG,+BAA+B;EACrD,UAAU,EAAE,mDAAmD;EAAG,gCAAgC;EAClG,UAAU,EAAE,2CAA2C;EAAE,sEAAsE;CAGlI;;AACD,AAAA,IAAI,CAAC;EAED,UAAU,EAAE,UAAU;EACtB,WAAW,EA5BA,MAAM,EACrB,UAAU,EA2BsB,UAAU;EACtC,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,KAAK;EAChB,KAAK,EAAE,YAAY;EAGnB,WAAW,EAAE,CAAC,CAAC,GAAG,CAAC,CAAC,CAAC,mBAAmB;CAE3C;;AAED,AAAA,CAAC;AACD,CAAC,AAAA,OAAO;AACR,CAAC,AAAA,MAAM,CAAC;EACJ,UAAU,EAAE,OAAO;CACtB;;AAID,AAAA,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE,CAAC;EACC,MAAM,EAAE,SAAS;CACpB;;AAED,AAAA,QAAQ,CAAC;EACL,OAAO,EAAE,IAAI;EACb,QAAQ,EAAE,IAAI;CACjB",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/_base.scss",
+        "../sass/_contact.scss",
+        "../sass/_about.scss",
+        "../sass/_footer.scss",
+        "../sass/_gallery.scss",
+        "../sass/_offer.scss",
+        "../sass/_tips.scss",
+        "../sass/_typography.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
