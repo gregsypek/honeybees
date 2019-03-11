@@ -1,0 +1,109 @@
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(/img/img16.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.header {
+    &-nav {
+        display: flex;
+        justify-content: space-between;
+        .logo {
+            height: 10rem;
+            width: auto;
+            margin: 3rem;
+            font-size: 5rem;
+        }
+        ul {
+            list-style: none;
+            li {
+                display: inline-block;
+                margin-left: 4rem;
+            }
+            font-size: 4rem;
+            a {
+                &:link,
+                &:visited {
+                    padding: .8rem;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: $color-cream;
+                    border: 2px solid transparent;
+                    transition: border .2s;
+                    letter-spacing: .3rem;
+                }
+                &:hover,
+                &:active {
+                    border: 2px solid rgba(238, 118, 0, .8);
+                    color: $color-black;
+                    background: $color-orange;
+                    transform: translateY(-5px); // text-shadow: 0 5px rgba(0, 0, 0, .8);
+                    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, .8);
+                }
+            }
+        }
+        &--burger {
+            .fas {
+                display: none;
+            }
+        }
+    }
+    &-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        font-size: 3rem;
+        padding: 2rem; // flex-basis: 80vw;
+        color: $color-white; // 
+        margin-top: 8rem; // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -70%);
+        span {
+            color: $color-olive;
+        }
+        &--title {
+            text-shadow: 0 5px rgba(0, 0, 0, .8);
+            align-self: center;
+            font-size: 5rem;
+            border-bottom: .5rem solid $color-cream;
+        }
+        &--invitation {
+            font-size: 2.5rem;
+            width: 30vw;
+            text-align: center;
+            align-self: center;
+            p:last-child {
+                letter-spacing: .3rem;
+            }
+        }
+    }
+    &-bee {
+        img {
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 4rem;
+            width: auto;
+            background-color: transparent;
+            animation: beeAnimation 1s ease-in-out infinite;
+        }
+    }
+}
+
+@keyframes beeAnimation {
+    0% {
+        transform: translateY(-10px)
+    }
+    50% {
+        transform: translateY(10px)
+    }
+    100% {
+        transform: translateY(-10px)
+    }
+}
