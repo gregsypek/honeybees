@@ -1,10 +1,5 @@
 body {
-  background: #3CA55C;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#B5AC49), to(#3CA55C));
-  background: linear-gradient(to right, #B5AC49, #3CA55C);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #eee;
   margin: 0;
 }
 
@@ -191,38 +186,102 @@ header {
   }
 }
 
-.hexagon {
+.about {
   display: -ms-grid;
   display: grid;
-  padding: 3rem;
-  width: 100px;
-  height: 55px;
-  background: red;
-  border: 2px solid transparent;
+  grid-gap: 5px;
+  -ms-grid-columns: 1fr (minmax(20rem, min-content))[5] 1fr;
+      grid-template-columns: 1fr repeat(5, minmax(20rem, -webkit-min-content)) 1fr;
+      grid-template-columns: 1fr repeat(5, minmax(20rem, min-content)) 1fr;
+  -ms-grid-rows: (minmax(10rem, min-content))[12];
+      grid-template-rows: repeat(12, minmax(10rem, -webkit-min-content));
+      grid-template-rows: repeat(12, minmax(10rem, min-content));
+}
+
+.about .hexagon {
   position: relative;
+  -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+          clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(249, 161, 27, 0.8)), to(rgba(238, 118, 0, 0.8)));
+  background: linear-gradient(to right, rgba(249, 161, 27, 0.8), rgba(238, 118, 0, 0.8));
+  width: 35vw;
+  height: 35vw;
+  font-size: 3rem;
 }
 
-.hexagon:before {
-  content: "";
-  position: absolute;
-  top: -25px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 25px solid red;
+.about .hexagon img {
+  width: auto;
+  height: 100%;
+  background-size: cover;
+  background-origin: center;
 }
 
-.hexagon:after {
-  content: "";
+.about .hexagon-1 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 4;
+  grid-row: 2/6;
+}
+
+.about .hexagon-2 {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-column: 4/6;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 4;
+  grid-row: 2/6;
+}
+
+.about .hexagon-3 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3/5;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 4;
+  grid-row: 5/9;
+}
+
+.about .hexagon-4 {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-column: 5/7;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 4;
+  grid-row: 5/9;
+}
+
+.about .hexagon-5 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 8;
+  -ms-grid-row-span: 4;
+  grid-row: 8/12;
+}
+
+.about .hexagon-6 {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-column: 4/6;
+  -ms-grid-row: 8;
+  -ms-grid-row-span: 4;
+  grid-row: 8/12;
+}
+
+.about .hexagon h1 {
   position: absolute;
-  bottom: -25px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-top: 25px solid red;
+  top: 7rem;
+  left: 12rem;
+  color: #fff169;
+}
+
+.about .hexagon p {
+  position: absolute;
+  font-size: 2rem;
+  color: #f2e9e1;
+  top: 15rem;
+  left: 5rem;
 }
 /*# sourceMappingURL=main.css.map */
