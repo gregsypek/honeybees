@@ -2,11 +2,13 @@
 $color-black:#1c140d;
 $color-white: #f2e9e1;
 $color-olive: #cbe86b;
-$color-orange: #f9a11b;
-$color-dark-orange: #ee7600; //(238,118,0) 
-$color-cream: #fff169;
+$color-orange: #f9a116; //rgba(249, 161, 27, 1)
+$color-dark-orange: #e06c0d; //(238,118,0) 
+$color-cream: #fff169; //rgba(255, 241, 105, 1)
 $color-dark-green: #1b5e20;
 $color-light-green:#c8ebc9;
+$color-brown: rgb(182, 163, 147);
+$color-brown-2: rgb(56, 34, 16);
 // FONT VARIABLES
 $font-primary: 'Londrina Solid',
 cursive,
@@ -22,13 +24,13 @@ $bp-smallest: 27.5em; //440px
 //     --black: #1c140d;
 // }
 body {
-    // background: #3CA55C;
-    // /* fallback for old browsers */
+    // background: linear-gradient(to right, #a7630a, #a87659);
+    ; // /* fallback for old browsers */
     // background: -webkit-linear-gradient(to right, #B5AC49, #3CA55C);
     // /* Chrome 10-25, Safari 5.1-6 */
     // background: linear-gradient(to right, #B5AC49, #3CA55C);
     // /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: #eee;
+    // background: #eee;
     margin: 0;
 }
 
@@ -59,5 +61,4 @@ h6 {
 
 .wrapper {
     display: grid;
-    grid-gap: 2rem;
 }

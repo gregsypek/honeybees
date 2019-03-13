@@ -1,5 +1,4 @@
 body {
-  background: #eee;
   margin: 0;
 }
 
@@ -32,12 +31,11 @@ h6 {
 .wrapper {
   display: -ms-grid;
   display: grid;
-  grid-gap: 2rem;
 }
 
 header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.4))), url(/img/img16.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(/img/img16.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/img/img18.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/img18.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -68,6 +66,8 @@ header {
 .header-nav ul li {
   display: inline-block;
   margin-left: 4rem;
+  -webkit-box-shadow: 0 4rem 2rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 4rem 2rem rgba(0, 0, 0, 0.4);
 }
 
 .header-nav ul a:link, .header-nav ul a:visited {
@@ -76,19 +76,15 @@ header {
   text-transform: uppercase;
   color: #fff169;
   border: 2px solid transparent;
-  -webkit-transition: border .2s;
-  transition: border .2s;
   letter-spacing: .3rem;
 }
 
 .header-nav ul a:hover, .header-nav ul a:active {
-  border: 2px solid rgba(238, 118, 0, 0.8);
-  color: #1c140d;
-  background: #f9a11b;
+  color: #f2e9e1;
+  background: #b6a393;
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
-  -webkit-box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.8);
-          box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.8);
+  text-shadow: 0 5px rgba(0, 0, 0, 0.8);
 }
 
 .header-nav--burger .fas {
@@ -189,21 +185,20 @@ header {
 .about {
   display: -ms-grid;
   display: grid;
-  grid-gap: 5px;
+  grid-gap: 2rem;
   -ms-grid-columns: 1fr (minmax(20rem, min-content))[5] 1fr;
       grid-template-columns: 1fr repeat(5, minmax(20rem, -webkit-min-content)) 1fr;
       grid-template-columns: 1fr repeat(5, minmax(20rem, min-content)) 1fr;
   -ms-grid-rows: (minmax(10rem, min-content))[12];
       grid-template-rows: repeat(12, minmax(10rem, -webkit-min-content));
       grid-template-rows: repeat(12, minmax(10rem, min-content));
+  background: #b6a393;
 }
 
 .about .hexagon {
   position: relative;
-  -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-          clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-  background: -webkit-gradient(linear, left top, right top, from(rgba(249, 161, 27, 0.8)), to(rgba(238, 118, 0, 0.8)));
-  background: linear-gradient(to right, rgba(249, 161, 27, 0.8), rgba(238, 118, 0, 0.8));
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(224, 108, 13, 0.8)), to(rgba(249, 161, 22, 0.8)));
+  background: linear-gradient(to right bottom, rgba(224, 108, 13, 0.8), rgba(249, 161, 22, 0.8));
   width: 35vw;
   height: 35vw;
   font-size: 3rem;
@@ -283,5 +278,10 @@ header {
   color: #f2e9e1;
   top: 15rem;
   left: 5rem;
+}
+
+.header-nav .logo, .header-nav ul li, .about .hexagon {
+  -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+          clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
 /*# sourceMappingURL=main.css.map */
