@@ -62,3 +62,19 @@ h6 {
 .wrapper {
     display: grid;
 }
+
+// Animacja do sekcji tips
+@keyframes slideOn {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 1
+    }
+    95% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0;
+    }
+}

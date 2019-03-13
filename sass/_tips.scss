@@ -1,0 +1,78 @@
+.tips {
+    background: $color-white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    &-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .header {
+            font-size: 3rem;
+            padding: 2rem;
+            color: $color-brown;
+            letter-spacing: .3rem;
+        }
+        span.underlain {
+            width: 15rem;
+            border-bottom: .5rem solid $color-dark-orange;
+        }
+        .slider {
+            aling-items: center;
+            .slide {
+                display: none;
+                margin: 0 auto;
+                opacity: 0;
+                height: 25rem;
+                width: 60vw;
+                animation: slideOn 5s ease-in forwards;
+                .quote {
+                    padding: 5rem;
+                    font-size: 2.5rem;
+                    text-align: center;
+                    line-height: 3rem;
+                    letter-spacing: .2rem;
+                }
+            }
+            .active-slide {
+                display: block;
+            }
+        }
+        .slide-dots {
+            width: 100%;
+            height: 2rem;
+            align-self: center;
+            text-align: center;
+            border-radius: 50%;
+            span {
+                display: inline-block;
+                background: $color-dark-orange;
+                margin: 0 10px;
+                width: 1.5rem;
+                height: 1.5rem;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+            .active-dots {
+                background: $color-brown-2;
+            }
+        }
+    }
+    &__movie {
+        position: relative;
+        margin-top: 4rem;
+        width: 60vw;
+        height: 50rem;
+        align-self: center;
+        border: .5rem solid $color-brown-2;
+        i.fas {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 8rem;
+            color: $color-brown-2;
+        }
+    }
+}
