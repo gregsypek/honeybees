@@ -1,11 +1,14 @@
 .about {
-    display: grid; // justify-items: center;
+    display: grid;
     grid-gap: 2rem;
     grid-template-columns: 1fr repeat(5, minmax(20rem, min-content)) 1fr;
     ;
     grid-template-rows: repeat(12, minmax(10rem, min-content));
-    ;
-    background: $color-brown; // background: linear-gradient(to right, $color-brown, $color-brown-2);
+    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(/img/a8.png);
+    //  background: linear-gradient(to right, $color-brown, $color-brown-2);
+
+    // margin-top: -10vh;
+
     .hexagon {
         position: relative; // margin: 4rem;
         @extend %hexagon;
@@ -14,42 +17,53 @@
         width: 35vw;
         height: 35vw;
         font-size: 3rem;
+        z-index: 10;
+
         img {
             width: auto;
             height: 100%;
             background-size: cover;
             background-origin: center; // box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 1);
         }
+
         &-about-1 {
             grid-column: 2/4;
             grid-row: 2/6;
+            background: $color-white;
         }
+
         &-about-2 {
             grid-column: 4/6;
             grid-row: 2/6;
         }
+
         &-about-3 {
             grid-column: 3/5;
             grid-row: 5/9;
         }
+
         &-about-4 {
             grid-column: 5/7;
             grid-row: 5/9;
         }
+
         &-about-5 {
             grid-column: 2/4;
             grid-row: 8/12;
         }
+
         &-about-6 {
             grid-column: 4/6;
             grid-row: 8/12;
         }
+
         h1 {
             position: absolute;
             top: 7rem;
             left: 12rem;
             color: $color-cream;
         }
+
         p {
             position: absolute;
             font-size: 2rem;

@@ -2,16 +2,18 @@
 $color-black:#1c140d;
 $color-white: #f2e9e1;
 $color-olive: #cbe86b;
+$color-cream-2: #f0e9c1df;
 $color-orange: #f9a116; //rgba(249, 161, 27, 1)
 $color-dark-orange: #e06c0d; //(238,118,0) 
+$color-dark-orange-2: #c02d00b9; //(238,118,0) 
+$color-dark-orange-3:#723e08; //(238,118,0) 
 $color-cream: #fff169; //rgba(255, 241, 105, 1)
 $color-dark-green: #1b5e20;
 $color-light-green:#c8ebc9;
 $color-brown: rgb(182, 163, 147);
 $color-brown-2: rgb(56, 34, 16);
 // FONT VARIABLES
-$font-primary: 'Londrina Solid',
-cursive,
+$font-primary: 'Sansita',
 sans-serif;
 // font-family: 'Londrina Solid', cursive;
 // RESPONSIVE  BREAKPOINTS
@@ -20,28 +22,26 @@ $bp-large: 62.5em; // 1000px
 $bp-medium: 50em; // 800px
 $bp-small: 37.5em; //600px
 $bp-smallest: 27.5em; //440px
+
 // :root {
 //     --black: #1c140d;
 // }
 body {
-    // background: linear-gradient(to right, #a7630a, #a87659);
-    ; // /* fallback for old browsers */
-    // background: -webkit-linear-gradient(to right, #B5AC49, #3CA55C);
-    // /* Chrome 10-25, Safari 5.1-6 */
-    // background: linear-gradient(to right, #B5AC49, #3CA55C);
-    // /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    // background: #eee;
+
     margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 html {
     box-sizing: border-box;
+    max-width: 1400px;
     font-family: $font-primary, sans-serif;
     font-weight: 300;
     font-size: 62.5%; //10px
     color: var(--black); // max-width: 1400px;
     // margin: 0 auto;
-    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.05); // background: #333333;
 }
 
 *,
@@ -61,6 +61,7 @@ h6 {
 
 .wrapper {
     display: grid;
+    // background-color: $color-white;
 }
 
 // Animacja do sekcji tips
@@ -68,13 +69,39 @@ h6 {
     0% {
         opacity: 0;
     }
-    5% {
+
+    2% {
         opacity: 1
     }
-    95% {
+
+    98% {
         opacity: 1
     }
+
     100% {
         opacity: 0;
+    }
+}
+
+//animacja do sekcji gallery
+@keyframes rotate {
+    0% {
+        transform: scale(1);
+    }
+
+    40% {
+        transform: scale(1.2);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    90% {
+        transform: scale(.8);
+    }
+
+    100% {
+        transform: scale(1);
     }
 }

@@ -1,25 +1,33 @@
 .tips {
-    background: $color-white;
+
+    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(/img/t1.png);
+
     padding: 2rem;
     display: flex;
     flex-direction: column;
+
+
     &-box {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
         .header {
-            font-size: 3rem;
+            font-size: 5rem;
             padding: 2rem;
-            color: $color-brown;
+            color: $color-orange;
             letter-spacing: .3rem;
         }
+
         span.underlain {
             width: 15rem;
             border-bottom: .5rem solid $color-dark-orange;
         }
+
         .slider {
             aling-items: center;
+
             .slide {
                 display: none;
                 margin: 0 auto;
@@ -27,52 +35,63 @@
                 height: 25rem;
                 width: 60vw;
                 animation: slideOn 5s ease-in forwards;
+
                 .quote {
                     padding: 5rem;
                     font-size: 2.5rem;
                     text-align: center;
                     line-height: 3rem;
                     letter-spacing: .2rem;
+                    color: $color-white;
                 }
             }
+
             .active-slide {
                 display: block;
             }
         }
+
         .slide-dots {
             width: 100%;
             height: 2rem;
             align-self: center;
             text-align: center;
-            border-radius: 50%;
+
+
             span {
                 display: inline-block;
                 background: $color-dark-orange;
                 margin: 0 10px;
                 width: 1.5rem;
                 height: 1.5rem;
+                // @extend %hexagon;
                 border-radius: 50%;
                 cursor: pointer;
             }
+
             .active-dots {
-                background: $color-brown-2;
+                background: $color-cream;
             }
         }
     }
+
     &__movie {
         position: relative;
-        margin-top: 4rem;
+        background-image: url(/img/img17.jpg);
+        background-size: cover;
+        margin: 5rem 4rem;
         width: 60vw;
-        height: 50rem;
+        min-height: 50rem;
         align-self: center;
-        border: .5rem solid $color-brown-2;
+        border: .5rem solid $color-orange;
+
         i.fas {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             font-size: 8rem;
-            color: $color-brown-2;
+            color: $color-orange;
         }
     }
 }

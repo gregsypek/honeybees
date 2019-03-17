@@ -1,57 +1,80 @@
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/img18.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(/img/h17.png);
+
     background-size: cover;
     background-position: center;
     height: 100vh;
-    background-attachment: fixed;
+
 }
 
 .header {
     &-nav {
         display: flex;
         justify-content: space-between;
+
+
         .logo {
             height: 10rem;
             width: auto;
             margin: 3rem;
             font-size: 5rem;
-            @extend %hexagon;
+
         }
+
         ul {
+            z-index: 4;
             list-style: none;
+            // text-shadow: 0 2px 2px rgba(0, 0, 0, .8);
+
+
             li {
                 display: inline-block;
-                margin-left: 4rem;
-                @extend %hexagon;
-                box-shadow: 0 4rem 2rem rgba(0, 0, 0, 0.4);
+                padding: .5rem 1.5rem;
+                margin-left: 3.5rem;
+                background: #333;
+
+                &:hover {
+                    border-bottom: 5px solid $color-brown;
+                }
+
+
+
+
             }
-            font-size: 4rem;
+
+            font-size: 3.5rem;
+            font-weight: 400;
+
             a {
+                transition: all .3s ease-in-out;
+                color: $color-cream-2;
+
+
                 &:link,
                 &:visited {
                     padding: .8rem;
                     text-decoration: none;
                     text-transform: uppercase;
-                    color: $color-cream;
-                    border: 2px solid transparent; // transition: border .2s;
                     letter-spacing: .3rem;
                 }
+
                 &:hover,
                 &:active {
-                    // border: 2px solid rgba(238, 118, 0, .8);
-                    color: $color-white;
-                    background: $color-brown;
-                    transform: translateY(-5px); // text-shadow: 0 5px rgba(0, 0, 0, .8);
-                    text-shadow: 0 5px rgba(0, 0, 0, .8);
+
+
+
+                    transform: translateY(15px);
                 }
             }
         }
+
         &--burger {
             .fas {
                 display: none;
             }
         }
     }
+
     &-text {
         display: flex;
         flex-direction: column;
@@ -59,38 +82,57 @@ header {
         justify-content: center;
         align-content: center;
         font-size: 3rem;
-        padding: 2rem; // flex-basis: 80vw;
-        color: $color-white; // 
-        margin-top: 8rem; // position: absolute;
-        // top: 50%;
-        // left: 50%;
-        // transform: translate(-50%, -70%);
+        padding: 2rem;
+        color: $color-cream; // 
+        margin-top: 8rem;
+        text-shadow: 0 0 4px rgba(0, 0, 0, .8);
+
         span {
             color: $color-olive;
+            text-shadow: 0 0 4px rgba(0, 0, 0, .8);
         }
+
         &--title {
-            text-shadow: 0 5px rgba(0, 0, 0, .8);
+            text-shadow: 0 0 4px rgba(0, 0, 0, .8);
             align-self: center;
             font-size: 5rem;
-            border-bottom: .5rem solid $color-cream;
+            padding: 2rem;
+            border-bottom: .5rem solid $color-dark-orange;
+            ;
+            // background: rgba(255, 255, 255, .2);
         }
+
         &--invitation {
             font-size: 2.5rem;
             width: 30vw;
             text-align: center;
             align-self: center;
-            p:last-child {
-                letter-spacing: .3rem;
-            }
+            color: $color-white;
+            font-weight: 400;
+            letter-spacing: .2rem;
+            // font-style: italic;
+            // text-shadow: 0 0 8px rgba(0, 0, 0, .8);
+        }
+
+        // background: rgba(51, 51, 51, .5);
+        // background: rgba(255, 255, 255, .2);
+        // background: rgba(238, 118, 0, 0);
+        // box-shadow: 0 5px 5px rgba(255, 255, 255, 1);
+
+
+        p:last-child {
+            letter-spacing: .3rem;
         }
     }
+
+
     &-bee {
         img {
             position: absolute;
-            top: 90%;
+            top: 85%;
             left: 50%;
             transform: translate(-50%, -50%);
-            height: 4rem;
+            height: 8rem;
             width: auto;
             background-color: transparent;
             animation: beeAnimation 1s ease-in-out infinite;
@@ -102,9 +144,11 @@ header {
     0% {
         transform: translateY(-10px)
     }
+
     50% {
         transform: translateY(10px)
     }
+
     100% {
         transform: translateY(-10px)
     }

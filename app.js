@@ -40,3 +40,25 @@ function changeManual() {
 dotsManual.forEach(item => item.addEventListener('click', changeManual));
 
 
+//gallery 
+
+const overlay = document.querySelector('.overlay');
+const overlayImage = overlay.querySelector('img');
+const overlayClose = overlay.querySelector('.close');
+// function generateHTML() {
+//     return ` <div>class="item__overlay"><button>Zobacz</button></div>`;
+// }
+
+function handleClick(e) {
+    const src = e.currentTarget.querySelector('img').src;
+    overlayImage.src = src;
+    overlay.classList.add('open');
+}
+
+function close() {
+    overlay.classList.remove('open');
+}
+
+const items = document.querySelectorAll('.hexagon');
+items.forEach(item => item.addEventListener('click', handleClick));
+overlayClose.addEventListener('click', close);
