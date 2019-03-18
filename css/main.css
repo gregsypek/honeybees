@@ -236,7 +236,7 @@ header {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  height: 8rem;
+  height: 6rem;
   width: auto;
   background-color: transparent;
   -webkit-animation: beeAnimation 1s ease-in-out infinite;
@@ -385,8 +385,8 @@ header {
   -ms-grid-rows: (minmax(5rem, min-content))[12];
       grid-template-rows: repeat(12, minmax(5rem, -webkit-min-content));
       grid-template-rows: repeat(12, minmax(5rem, min-content));
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(/img/g1.png);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/g1.png);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(/img/g2.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/g2.png);
 }
 
 .gallery .overlay {
@@ -550,6 +550,45 @@ header {
   -ms-grid-row: 8;
   -ms-grid-row-span: 4;
   grid-row: 8/12;
+}
+
+.offer {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  background: #333;
+  font-size: 3rem;
+  color: #f2e9e1;
+}
+
+.offer th {
+  background: #f9a116;
+  color: #333;
+}
+
+.offer table,
+.offer th,
+.offer td {
+  padding: 1rem;
+  border: 3px solid #e06c0d;
+  border-collapse: collapse;
+  padding: 1.5rem 3rem;
+}
+
+.offer .table-first {
+  margin: 10rem;
+}
+
+.offer .table-second {
+  margin: 10rem;
+}
+
+.offer .table-third {
+  margin: 10rem;
+  text-align: center;
 }
 
 .tips {

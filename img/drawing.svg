@@ -15,7 +15,10 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="drawing.svg">
+   sodipodi:docname="drawing.svg"
+   inkscape:export-filename="E:\MY OWN WEB PROJECTS\KRZYSIEK\HONEYBEES\img\bee.png"
+   inkscape:export-xdpi="13"
+   inkscape:export-ydpi="13">
   <defs
      id="defs2">
     <inkscape:path-effect
@@ -167,7 +170,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.125"
-     inkscape:cx="351.4697"
+     inkscape:cx="-1032.5303"
      inkscape:cy="1191.4113"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -188,7 +191,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -197,7 +200,7 @@
      inkscape:groupmode="layer"
      id="layer1">
     <path
-       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:10.58253098;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:0.85;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:10.583;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="M 302.27591,107.06183 C 342.65001,63.682964 333.66213,26.319657 301.98255,-0.12939437 270.30296,-26.578447 227.92808,-32.097522 187.55398,11.28135 c -40.3741,43.378866 -47.42239,99.98558 -15.74281,126.43463 31.67958,26.44906 90.09064,12.72473 130.46474,-30.65415 z"
        id="ellipse6020"
        inkscape:export-filename="C:\Users\asus\Desktop\bee.png"
@@ -206,7 +209,7 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="sssss" />
     <path
-       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:10.58253098;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:0.85;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:10.58253098;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="M 6.8798711,0.13342363 C 44.96192,41.049651 50.15214,95.660004 18.47255,122.10906 c -31.679587,26.44906 -88.232574,14.7211 -126.31462,-26.195151 -38.08205,-40.916232 -27.23609,-76.283183 4.4435,-102.7322334 31.679592,-26.4490546 72.196401,-33.9644896 110.2784411,6.95174803 z"
        id="path6016"
        inkscape:export-filename="C:\Users\asus\Desktop\bee.png"
@@ -216,7 +219,7 @@
        sodipodi:nodetypes="sssss" />
     <path
        id="path5735"
-       style="opacity:1;fill:#ffc200;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:10.35472775;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:1;fill:#f9a116;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:10.35472775;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="m 111.56803,-4.7801674 a 112.51936,139.15174 0.30204079 0 0 -11.24681,0.02015 A 112.51936,139.15174 0.30204079 0 0 -6.5468059,141.34539 112.51936,139.15174 0.30204079 0 0 106.59755,273.26802 c 0.0297,-0.0352 0.0615,-0.068 0.10434,-0.0913 0.12194,-0.0661 0.26727,-0.0772 0.40138,-0.11742 0.10509,-0.0303 0.168,-0.0352 0.20068,-0.0252 0.0594,0.0252 0.0144,0.10987 -0.0686,0.21867 a 112.51936,139.15174 0.30204079 0 0 4.12099,-0.0805 A 112.51936,139.15174 0.30204079 0 0 218.22156,127.06692 112.51936,139.15174 0.30204079 0 0 111.56798,-4.7802494 Z"
        inkscape:connector-curvature="0"
        inkscape:export-filename="C:\Users\asus\Desktop\bee.png"
@@ -231,7 +234,7 @@
        inkscape:export-ydpi="13.939825"
        inkscape:connector-curvature="0" />
     <path
-       style="opacity:1;fill:#ffc200;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:10.35472775;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:1;fill:#f9a116;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:10.35472775;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="M 185.43991,-37.796232 A 81.045986,72.046586 0 0 1 104.39392,34.25037 81.045986,72.046586 0 0 1 23.34795,-37.796232 81.045986,72.046586 0 0 1 104.39392,-109.8428 81.045986,72.046586 0 0 1 185.43991,-37.796232 Z"
        id="path5755"
        inkscape:export-filename="C:\Users\asus\Desktop\bee.png"
