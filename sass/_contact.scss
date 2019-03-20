@@ -1,0 +1,33 @@
+.contact {
+  background: #333;
+  padding-top: 15rem;
+  font-size: 2rem;
+  #contact-form {
+    width: 45%;
+    margin-left: 3rem;
+    background: #333;
+    color: $color-white;
+  }
+  label {
+    padding: 1.5rem 0;
+    display: block;
+  }
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 3px;
+    border: 2px solid $color-dark-orange;
+  }
+  textarea {
+    height: 100px;
+  }
+  input[type="checkbox"] {
+    margin: 10px 5px 10px 0;
+  }
+  *:focus {
+    outline: none;
+  }
+}

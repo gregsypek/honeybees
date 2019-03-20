@@ -1,5 +1,3 @@
-
-
 const slideList = [...document.querySelectorAll('.slide')];
 const dots = [...document.querySelectorAll('.slide-dots span')];
 let indexSlide = 0;
@@ -24,6 +22,7 @@ const changeSlide = () => {
 indexSetInterval = setInterval(changeSlide, 8000);
 
 const dotsManual = [...document.querySelectorAll('.slide-dots span')];
+
 function changeManual() {
     let activeDot = dots.findIndex(dot => dot.classList.contains('active-dots'));
     dots[activeDot].classList.remove('active-dots');

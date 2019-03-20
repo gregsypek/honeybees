@@ -273,6 +273,46 @@ header {
   }
 }
 
+.contact {
+  background: #333;
+  padding-top: 15rem;
+  font-size: 2rem;
+}
+
+.contact #contact-form {
+  width: 45%;
+  margin-left: 3rem;
+  background: #333;
+  color: #f2e9e1;
+}
+
+.contact label {
+  padding: 1.5rem 0;
+  display: block;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact select,
+.contact textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 3px;
+  border: 2px solid #e06c0d;
+}
+
+.contact textarea {
+  height: 100px;
+}
+
+.contact input[type="checkbox"] {
+  margin: 10px 5px 10px 0;
+}
+
+.contact *:focus {
+  outline: none;
+}
+
 .about {
   display: -ms-grid;
   display: grid;
@@ -565,7 +605,7 @@ header {
 }
 
 .offer th {
-  background: #f9a116;
+  background: #f0e9c1df;
   color: #333;
 }
 
@@ -579,15 +619,15 @@ header {
 }
 
 .offer .table-first {
-  margin: 10rem;
+  margin: 5rem;
 }
 
 .offer .table-second {
-  margin: 10rem;
+  margin: 5rem;
 }
 
 .offer .table-third {
-  margin: 10rem;
+  margin: 5rem;
   text-align: center;
 }
 

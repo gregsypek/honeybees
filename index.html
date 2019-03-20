@@ -12,8 +12,8 @@
     <!-- <link href="https://fonts.googleapis.com/css?family=Gentium+Basic:400,400i&amp;subset=latin-ext" rel="stylesheet"> -->
 
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -265,17 +265,71 @@
                 </tr>
                 <tr>
                     <td>12873480950-49509509504</td>
-                    <td>Prosimy dokonywać wpłat po uprzednim kontkcie mailowym lub telefonicznym </td>
+                    <td>Prosimy dokonywać wpłat po uprzednim kontakcie mailowym lub telefonicznym </td>
                     <td>Towar wysyłamy w godzinach od 8 - 16</td>
                 </tr>
             </table>
         </div>
     </section>
+    <section class="contact">
+        <form method="post" action="form/send.php" id="contact-form">
+            <fieldset>
+                <div>
+                    <label for="name">Imię i nazwisko</label>
+                </div>
+                <div>
+                    <input type="text" name="contact_name" placeholder="Imię i nazwisko" required="required"
+                        tabindex="1" />
+                </div>
+
+
+                <div>
+                    <label for="email">Email</label>
+                </div>
+                <div>
+                    <input type="email" name="contact_email" placeholder="Adres e-mail" required="required"
+                        tabindex="2" />
+
+                </div>
+
+                <!-- <div>
+                <label for="find-us">Jak nas znalazłeś</label>
+            </div>
+            <div>
+                <select name="find-us" id="find-us">
+                    <option value="friends" selected>Przyjaciele</option>
+                    <option value="search">Wyszukiwarka</option>
+                    <option value="ad">Ogłoszenie</option>
+                    <option value="other">Inne</option>
+                </select>
+            </div> -->
+
+
+
+                </div>
+
+                <div class="col span-1-of-3">
+                    <label>Zostaw wiadomość</label>
+                </div>
+                <div>
+                    <textarea rows="5" columns="10" name="contact_body" placeholder="Treść wiadomości"
+                        required="required" tabindex="3"></textarea>
+                </div>
+
+
+
+
+            </fieldset>
+        </form>
+
+    </section>
+
 
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
     <script src="app.js"></script>
+
 
 </body>
 
