@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="sass/main.css">
 </head>
 
 <body>
@@ -23,7 +23,7 @@
             <!-- <div class="background"> -->
             <!-- <div class="header"> -->
             <nav class="header-nav">
-                <img src="/img/clover.png" alt="honey_logo" class="logo">
+                <img src="img/clover.png" alt="honey_logo" class="logo">
                 <ul class="header-nav--list">
                     <li><a href="#about">O mnie</a></li>
                     <li><a href="#gallery">Galeria</a></li>
@@ -46,7 +46,7 @@
             </div>
             <div class="header-bee">
                 <a href="#">
-                    <img src="/img/bee.png" alt="bee-icon">
+                    <img src="img/bee.png" alt="bee-icon">
                 </a>
                 <!-- <div id="hexagon"></div>  -->
                 <!-- <svg viewBox="0 0 32 32">
@@ -271,64 +271,90 @@
             </table>
         </div>
     </section>
-    <section class="contact">
-        <form method="post" action="form/send.php" id="contact-form">
-            <fieldset>
-                <div>
-                    <label for="name">Imię i nazwisko</label>
-                </div>
-                <div>
-                    <input type="text" name="contact_name" placeholder="Imię i nazwisko" required="required"
-                        tabindex="1" />
-                </div>
+    <!-- <section class="contact map-box" name="form" id="form">
 
+        <form method="post" action="mailer.php" class="contact-form">
 
-                <div>
-                    <label for="email">Email</label>
-                </div>
-                <div>
-                    <input type="email" name="contact_email" placeholder="Adres e-mail" required="required"
-                        tabindex="2" />
+            <?php
+            if($_GET['success'] == 1)
+                 echo "<div class='form-messages success'>Thank You! Your message has been sent.</div>";
+             else
+                 echo "<div class='form-messages error'>Oops! Something went wrong and we couldn't send your message</div>";
+        ?>
+            <div class="form-messages success">
+                Thank You! Your message has been sent.
+            </div>          
 
-                </div>
-
-                <!-- <div>
-                <label for="find-us">Jak nas znalazłeś</label>
+            <div>
+                <label for="name">Imię i nazwisko</label>
             </div>
             <div>
-                <select name="find-us" id="find-us">
-                    <option value="friends" selected>Przyjaciele</option>
-                    <option value="search">Wyszukiwarka</option>
-                    <option value="ad">Ogłoszenie</option>
-                    <option value="other">Inne</option>
-                </select>
-            </div> -->
+                <input type="text" name="name" id="name" placeholder="Imię i nazwisko" required />
+            </div>
 
 
+            <div>
+                <label for="email">Email</label>
+            </div>
+            <div>
+                <input type="email" name="email" id="email" placeholder="Adres e-mail" required />
 
-                </div>
+            </div>
 
-                <div class="col span-1-of-3">
-                    <label>Zostaw wiadomość</label>
-                </div>
-                <div>
-                    <textarea rows="5" columns="10" name="contact_body" placeholder="Treść wiadomości"
-                        required="required" tabindex="3"></textarea>
-                </div>
+            </div>
 
+            <div class="col span-1-of-3">
+                <label>Zostaw wiadomość</label>
+            </div>
+            <div>
+                <textarea rows="5" columns="10" name="message" id="message" placeholder="Treść wiadomości"
+                    required></textarea>
+            </div>
+            <div class="col span-2-of-3">
+                <input type="submit" value="Wyślij!">
+            </div>
 
-
-
-            </fieldset>
         </form>
 
+    </section> -->
+
+    <section class="contact">
+
+           
+            
+        <div class="contact-left">            
+                <p class="contact-p left">Wyślij do nas wiadomość</p>
+            <form class="contact-form" action="contactform.php" method="post">
+                
+                <input type="text" name="name" placeholder="Twoje imię i nazwisko">
+                <input type="text" name="mail" placeholder="Twój e-mail">
+                <input type="text" name="subject" placeholder="Temat wiadomości">
+                <textarea rows="8" columns="10" name="message" placeholder="Treść wiadomości"></textarea>
+                <button type="submit" name="submit" class="contact-btn  btn-left btn">Wyślij!</button>                
+            </form>
+
+        </div>
+        <div class="contact-right">
+            <div class="contact-box">
+                <p class="contact-p right">Zobacz gdzie jesteśmy</p>
+                <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6089.42855831672!2d21.72556844386702!3d50.08086975906631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473d039c0d36159d%3A0xe1a8004a2b5b0543!2sKaw%C4%99czyn+S%C4%99dziszowski+55%2C+39-120+Kaw%C4%99czyn+S%C4%99dziszowski!5e0!3m2!1spl!2spl!4v1553359319228" width="600" height="460" frameborder="0" style="border:0" padding-top= "50"allowfullscreen></iframe>
+                </div>
+                <button type="submit" name="submit" class="contact-btn btn-right btn">Mapa w nowym oknie</button>          
+            </div>
+        </div>
+    </section>
+    
+    <section class="footer">
+        <p>Copyright by &copy; Grzegorz Sypek</p>
     </section>
 
 
-    </div>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
     <script src="app.js"></script>
+
 
 
 </body>

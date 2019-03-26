@@ -4,10 +4,8 @@
     grid-template-columns: 1fr repeat(5, minmax(20rem, min-content)) 1fr;
     ;
     grid-template-rows: repeat(12, minmax(10rem, min-content));
-    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(/img/a8.png);
-    //  background: linear-gradient(to right, $color-brown, $color-brown-2);
-
-    // margin-top: -10vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/a8.png);
+    
 
     .hexagon {
         position: relative; // margin: 4rem;

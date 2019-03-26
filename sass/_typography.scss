@@ -2,3 +2,25 @@
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
 
+%btn {
+    font-size: 2.5rem;
+      letter-spacing: .3rem;
+      font-family: inherit;
+    //   width: 20rem;
+      padding: 1.5rem;
+      justify-self: center;
+      border: none;
+      text-transform: uppercase;
+      background: $color-dark-orange;
+      color: $color-cream;
+      border-radius: 4px;
+}
+
+%paragraph {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    color: $color-cream-2;
+}
