@@ -4,18 +4,17 @@
     grid-template-columns: 1fr repeat(5, minmax(20rem, min-content)) 1fr;
     ;
     grid-template-rows: repeat(12, minmax(10rem, min-content));
-    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/a8.png);
+    // background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/a8.png);
     
 
     .hexagon {
         position: relative; // margin: 4rem;
         @extend %hexagon;
-        background: linear-gradient(to right bottom, rgba($color-dark-orange, .8), rgba($color-orange, .8)); // background-image: linear-gradient(135deg, rgba(238, 118, 0, 1) 0%, rgba(238, 118, 0, 1) 50%, rgba(249, 161, 27, 1) 50%, rgba(249, 161, 27, 1) 100%), ;  
-        // box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+        background: linear-gradient(to right bottom, rgba($color-dark-orange, 1), rgba($color-orange, 1)); 
         width: 35vw;
         height: 35vw;
         font-size: 3rem;
-        z-index: 10;
+        background-blend-mode:darken;
 
         img {
             width: auto;

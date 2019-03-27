@@ -1,4 +1,8 @@
 body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../img/szablon3.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/szablon3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -112,8 +116,6 @@ h6 {
 }
 
 header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../img/h17.png);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/h17.png);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -153,12 +155,7 @@ header {
 }
 
 .header-nav ul li:hover {
-  border: 5px solid rgba(255, 241, 105, 0.8);
-  background: rgba(249, 161, 22, 0.8);
-}
-
-.header-nav ul li:hover a {
-  color: #1c140d;
+  border: 5px solid #f0e9c1df;
 }
 
 .header-nav ul a {
@@ -234,11 +231,11 @@ header {
 
 .header-bee img {
   position: absolute;
-  top: 85%;
+  top: 92%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  height: 6rem;
+  height: 4rem;
   width: auto;
   background-color: transparent;
   -webkit-animation: beeAnimation 1s ease-in-out infinite;
@@ -280,7 +277,6 @@ header {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  background: #333;
   font-size: 2.5rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -382,18 +378,16 @@ header {
   -ms-grid-rows: (minmax(10rem, min-content))[12];
       grid-template-rows: repeat(12, minmax(10rem, -webkit-min-content));
       grid-template-rows: repeat(12, minmax(10rem, min-content));
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../img/a8.png);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/a8.png);
 }
 
 .about .hexagon {
   position: relative;
-  background: -webkit-gradient(linear, left top, right bottom, from(rgba(224, 108, 13, 0.8)), to(rgba(249, 161, 22, 0.8)));
-  background: linear-gradient(to right bottom, rgba(224, 108, 13, 0.8), rgba(249, 161, 22, 0.8));
+  background: -webkit-gradient(linear, left top, right bottom, from(#e06c0d), to(#f9a116));
+  background: linear-gradient(to right bottom, #e06c0d, #f9a116);
   width: 35vw;
   height: 35vw;
   font-size: 3rem;
-  z-index: 10;
+  background-blend-mode: darken;
 }
 
 .about .hexagon img {
@@ -473,6 +467,47 @@ header {
   left: 5rem;
 }
 
+.footer {
+  color: #888;
+}
+
+.footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  list-style: none;
+  margin: 0;
+  padding-right: 5rem;
+}
+
+.footer-nav li {
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.footer-nav a {
+  display: block;
+  text-decoration: none;
+  color: #888;
+  -webkit-transition: color .2s ease;
+  transition: color .2s ease;
+}
+
+.footer-nav a:hover {
+  color: #f0e9c1df;
+}
+
+.footer p {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 3rem;
+  margin: 0;
+}
+
 .gallery {
   position: relative;
   display: -ms-grid;
@@ -484,8 +519,6 @@ header {
   -ms-grid-rows: (minmax(5rem, min-content))[12];
       grid-template-rows: repeat(12, minmax(5rem, -webkit-min-content));
       grid-template-rows: repeat(12, minmax(5rem, min-content));
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(/img/g2.png);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/g2.png);
 }
 
 .gallery .overlay {
@@ -658,23 +691,22 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   justify-items: center;
-  background: #333;
   font-size: 3rem;
   color: #f9a116;
 }
 
 .offer th {
   background: #f0e9c1df;
-  color: #333;
+  color: #f0e9c1df;
 }
 
 .offer table,
 .offer th,
 .offer td {
   padding: 1rem;
-  border: 3px solid #e06c0d;
   border-collapse: collapse;
   padding: 1.5rem 3rem;
+  border: 4px solid #f0e9c1df;
 }
 
 .offer .table-first {
@@ -691,8 +723,6 @@ header {
 }
 
 .tips {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(/img/t1.png);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/t1.png);
   padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -783,7 +813,7 @@ header {
 
 .tips__movie {
   position: relative;
-  background-image: url(/img/img17.jpg);
+  background-image: url(../img/img17.jpg);
   background-size: cover;
   margin: 5rem 4rem;
   width: 60vw;
@@ -830,5 +860,18 @@ header {
   text-transform: uppercase;
   letter-spacing: .3rem;
   color: #f0e9c1df;
+}
+
+.header-text--title, .offer table,
+.offer th,
+.offer td {
+  background: rgba(51, 51, 51, 0.8);
+}
+
+.header-text--invitation, .tips-box {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../img/sm-bgc.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/sm-bgc.png);
+  z-index: 100;
+  padding: 1rem;
 }
 /*# sourceMappingURL=main.css.map */

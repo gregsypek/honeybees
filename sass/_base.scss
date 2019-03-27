@@ -1,5 +1,6 @@
 //COLOR VARIABLES
 $color-black:#1c140d;
+$color-light-black:#888;
 $color-white: #f2e9e1;
 $color-olive: #cbe86b;
 $color-cream-2: #f0e9c1df;
@@ -27,10 +28,15 @@ $bp-smallest: 27.5em; //440px
 //     --black: #1c140d;
 // }
 body {
+    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/szablon3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    // position: relative;
 
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    
 }
 
 html {

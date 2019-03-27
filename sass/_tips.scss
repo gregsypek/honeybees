@@ -1,6 +1,6 @@
 .tips {
 
-    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(/img/t1.png);
+    // background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/t1.png);
 
     padding: 2rem;
     display: flex;
@@ -12,12 +12,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        @extend %bgc-transparent-2;
 
         .header {
             font-size: 5rem;
             padding: 2rem;
             color: $color-orange;
             letter-spacing: .3rem;
+            
         }
 
         span.underlain {
@@ -77,7 +79,7 @@
 
     &__movie {
         position: relative;
-        background-image: url(/img/img17.jpg);
+        background-image: url(../img/img17.jpg);
         background-size: cover;
         margin: 5rem 4rem;
         width: 60vw;

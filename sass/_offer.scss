@@ -3,7 +3,7 @@
     justify-content: center;
     justify-items: center; // align-content: center;
     // background: rgba(51, 51, 51, .8);
-    background: #333;
+    // background: #333;
     font-size: 3rem;
     color: $color-orange;
     // width: 60vw;
@@ -12,7 +12,7 @@
 
     th {
         background: $color-cream-2;
-        color: #333;
+        color: $color-cream-2;
 
     }
 
@@ -22,9 +22,10 @@
     th,
     td {
         padding: 1rem;
-        border: 3px solid $color-dark-orange;
         border-collapse: collapse;
         padding: 1.5rem 3rem;
+       @extend %bgc-transparent;
+       border: 4px solid $color-cream-2;
     }
 
     .table-first {
