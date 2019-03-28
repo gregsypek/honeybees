@@ -3,7 +3,7 @@ header {
 
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    min-height: 100vh;
 
 }
 
@@ -153,6 +153,7 @@ header {
             width: auto;
             background-color: transparent;
             animation: beeAnimation 1s ease-in-out infinite;
+            z-index: 101;
         }
     }
 }

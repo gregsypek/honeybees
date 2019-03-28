@@ -5,17 +5,46 @@ body {
   background-size: cover;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Sansita", sans-serif, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 62.5%;
   color: var(--black);
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media only screen and (max-width: 62.5em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+@media only screen and (max-width: 50em) {
+  html {
+    font-size: 56%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 52%;
+  }
+}
+
+@media only screen and (max-width: 27.5em) {
+  html {
+    font-size: 50%;
+  }
 }
 
 *,
@@ -115,10 +144,14 @@ h6 {
   }
 }
 
+.m-top {
+  margin-top: 10rem;
+}
+
 header {
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .header-nav {
@@ -240,6 +273,7 @@ header {
   background-color: transparent;
   -webkit-animation: beeAnimation 1s ease-in-out infinite;
           animation: beeAnimation 1s ease-in-out infinite;
+  z-index: 101;
 }
 
 @-webkit-keyframes beeAnimation {
@@ -380,14 +414,92 @@ header {
       grid-template-rows: repeat(12, minmax(10rem, min-content));
 }
 
+@media only screen and (max-width: 90em) {
+  .about {
+    -ms-grid-columns: 1fr (minmax(18rem, min-content))[5] 1fr;
+        grid-template-columns: 1fr repeat(5, minmax(18rem, -webkit-min-content)) 1fr;
+        grid-template-columns: 1fr repeat(5, minmax(18rem, min-content)) 1fr;
+    -ms-grid-rows: (minmax(8rem, min-content))[12];
+        grid-template-rows: repeat(12, minmax(8rem, -webkit-min-content));
+        grid-template-rows: repeat(12, minmax(8rem, min-content));
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .about {
+    -ms-grid-columns: 1fr (minmax(13rem, min-content))[5] 1fr;
+        grid-template-columns: 1fr repeat(5, minmax(13rem, -webkit-min-content)) 1fr;
+        grid-template-columns: 1fr repeat(5, minmax(13rem, min-content)) 1fr;
+    -ms-grid-rows: (minmax(3rem, min-content))[12];
+        grid-template-rows: repeat(12, minmax(3rem, -webkit-min-content));
+        grid-template-rows: repeat(12, minmax(3rem, min-content));
+  }
+}
+
+@media only screen and (max-width: 50em) {
+  .about {
+    -ms-grid-columns: 1fr (minmax(10rem, min-content))[3] 1fr;
+        grid-template-columns: 1fr repeat(3, minmax(10rem, -webkit-min-content)) 1fr;
+        grid-template-columns: 1fr repeat(3, minmax(10rem, min-content)) 1fr;
+    -ms-grid-rows: (minmax(8rem, min-content))[20];
+        grid-template-rows: repeat(20, minmax(8rem, -webkit-min-content));
+        grid-template-rows: repeat(20, minmax(8rem, min-content));
+    grid-gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .about {
+    -ms-grid-rows: (minmax(3rem, min-content))[20];
+        grid-template-rows: repeat(20, minmax(3rem, -webkit-min-content));
+        grid-template-rows: repeat(20, minmax(3rem, min-content));
+    grid-gap: 1.5rem;
+  }
+}
+
 .about .hexagon {
   position: relative;
-  background: -webkit-gradient(linear, left top, right bottom, from(#e06c0d), to(#f9a116));
-  background: linear-gradient(to right bottom, #e06c0d, #f9a116);
+  background: -webkit-gradient(linear, left top, left bottom, from(#e06c0d), to(#f9a116));
+  background: linear-gradient(to bottom, #e06c0d, #f9a116);
   width: 35vw;
   height: 35vw;
   font-size: 3rem;
-  background-blend-mode: darken;
+}
+
+@media only screen and (max-width: 75em) {
+  .about .hexagon {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 62.5em) {
+  .about .hexagon {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 50em) {
+  .about .hexagon {
+    width: 50vw;
+    height: 50vw;
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .about .hexagon {
+    width: 55vw;
+    height: 55vw;
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .about .hexagon {
+    width: 63vw;
+    height: 63vw;
+    font-size: 2rem;
+  }
 }
 
 .about .hexagon img {
@@ -416,6 +528,17 @@ header {
   grid-row: 2/6;
 }
 
+@media only screen and (max-width: 50em) {
+  .about .hexagon-about-2 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3/5;
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 4;
+    grid-row: 5/9;
+  }
+}
+
 .about .hexagon-about-3 {
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
@@ -423,6 +546,17 @@ header {
   -ms-grid-row: 5;
   -ms-grid-row-span: 4;
   grid-row: 5/9;
+}
+
+@media only screen and (max-width: 50em) {
+  .about .hexagon-about-3 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+    -ms-grid-row: 8;
+    -ms-grid-row-span: 4;
+    grid-row: 8/12;
+  }
 }
 
 .about .hexagon-about-4 {
@@ -434,6 +568,17 @@ header {
   grid-row: 5/9;
 }
 
+@media only screen and (max-width: 50em) {
+  .about .hexagon-about-4 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3/5;
+    -ms-grid-row: 11;
+    -ms-grid-row-span: 4;
+    grid-row: 11/15;
+  }
+}
+
 .about .hexagon-about-5 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
@@ -441,6 +586,17 @@ header {
   -ms-grid-row: 8;
   -ms-grid-row-span: 4;
   grid-row: 8/12;
+}
+
+@media only screen and (max-width: 50em) {
+  .about .hexagon-about-5 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+    -ms-grid-row: 14;
+    -ms-grid-row-span: 4;
+    grid-row: 14/18;
+  }
 }
 
 .about .hexagon-about-6 {
@@ -452,19 +608,87 @@ header {
   grid-row: 8/12;
 }
 
+@media only screen and (max-width: 50em) {
+  .about .hexagon-about-6 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3/5;
+    -ms-grid-row: 17;
+    -ms-grid-row-span: 4;
+    grid-row: 17/21;
+  }
+}
+
 .about .hexagon h1 {
   position: absolute;
-  top: 7rem;
-  left: 12rem;
+  top: 9rem;
+  left: 15.5rem;
   color: #fff169;
+}
+
+@media only screen and (max-width: 90em) {
+  .about .hexagon h1 {
+    left: 11.5rem;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .about .hexagon h1 {
+    left: 8.5rem;
+    top: 7rem;
+  }
+}
+
+@media only screen and (max-width: 50em) {
+  .about .hexagon h1 {
+    top: 8rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .about .hexagon h1 {
+    top: 6rem;
+    left: 8rem;
+  }
 }
 
 .about .hexagon p {
   position: absolute;
+  padding: 1rem;
   font-size: 2rem;
-  color: #f2e9e1;
+  color: #1c140d;
   top: 15rem;
-  left: 5rem;
+  left: 2rem;
+  letter-spacing: .2rem;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.8);
+}
+
+@media only screen and (max-width: 75em) {
+  .about .hexagon p {
+    font-size: 1.8rem;
+    top: 11rem;
+  }
+}
+
+@media only screen and (max-width: 62.5em) {
+  .about .hexagon p {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 50em) {
+  .about .hexagon p {
+    font-size: 2rem;
+    top: 15rem;
+    left: 2rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .about .hexagon p {
+    top: 10rem;
+    font-size: 1.8rem;
+  }
 }
 
 .footer {
@@ -872,6 +1096,6 @@ header {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../img/sm-bgc.png);
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/sm-bgc.png);
   z-index: 100;
-  padding: 1rem;
+  padding: .8rem;
 }
 /*# sourceMappingURL=main.css.map */

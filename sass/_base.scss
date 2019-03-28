@@ -1,6 +1,7 @@
 //COLOR VARIABLES
 $color-black:#1c140d;
 $color-light-black:#888;
+$color-grey:#333;
 $color-white: #f2e9e1;
 $color-olive: #cbe86b;
 $color-cream-2: #f0e9c1df;
@@ -17,16 +18,20 @@ $color-brown-2: rgb(56, 34, 16);
 $font-primary: 'Sansita',
 sans-serif;
 // font-family: 'Londrina Solid', cursive;
+
+
 // RESPONSIVE  BREAKPOINTS
+
+
+$bp-biggest: 100em; // 1600px
+$bp-big: 90em; // 1440px
 $bp-largest: 75em; // 1200px
 $bp-large: 62.5em; // 1000px
 $bp-medium: 50em; // 800px
 $bp-small: 37.5em; //600px
 $bp-smallest: 27.5em; //440px
 
-// :root {
-//     --black: #1c140d;
-// }
+
 body {
     background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/szablon3.png);
     background-repeat: no-repeat;
@@ -35,7 +40,7 @@ body {
 
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    // overflow-x: hidden;
     
 }
 
@@ -43,11 +48,30 @@ html {
     box-sizing: border-box;
     // max-width: 1400px;
     font-family: $font-primary, sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 62.5%; //10px
     color: var(--black); // max-width: 1400px;
     // margin: 0 auto;
     text-shadow: 0 2px 0 rgba(0, 0, 0, 0.05); // background: #333333;
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 60%; //1em= 9.6px
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 58%; //1em= 9.28px
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 56%; //1em= 8,96px
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 52%; // 1em = 8,32px
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: 50%; // 1em = 8px
+    }
 }
 
 *,
@@ -110,4 +134,9 @@ h6 {
     100% {
         transform: scale(1);
     }
+}
+
+
+.m-top {
+    margin-top: 10rem;
 }
