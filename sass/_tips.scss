@@ -19,6 +19,9 @@
             padding: 2rem;
             color: $color-orange;
             letter-spacing: .3rem;
+            @media only screen and (max-width: $bp-small) {                
+                font-size: 3.5rem;
+            }
             
         }
 
@@ -37,6 +40,12 @@
                 height: 25rem;
                 width: 60vw;
                 animation: slideOn 5s ease-in forwards;
+                @media only screen and (max-width: $bp-medium) {                
+                    width: 80vw;
+                }
+                @media only screen and (max-width: $bp-small) {                
+                    width: 90vw;
+                }
 
                 .quote {
                     padding: 5rem;
@@ -45,6 +54,9 @@
                     line-height: 3rem;
                     letter-spacing: .2rem;
                     color: $color-white;
+                    @media only screen and (max-width: $bp-small) {                
+                       padding: 2rem;
+                    }
                 }
             }
 
@@ -58,6 +70,9 @@
             height: 2rem;
             align-self: center;
             text-align: center;
+            @media only screen and (max-width: $bp-medium) {                
+                margin-top: 2rem;
+            }
 
 
             span {
@@ -83,9 +98,14 @@
         background-size: cover;
         margin: 5rem 4rem;
         width: 60vw;
-        min-height: 50rem;
+        height: 33vw;
         align-self: center;
         border: .5rem solid $color-orange;
+
+        @media only screen and (max-width: $bp-medium) {                
+        width: 80vw;
+        height: 45vw; //video format similar to 16:9
+        }
 
         i.fas {
             position: absolute;

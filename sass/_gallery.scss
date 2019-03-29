@@ -3,11 +3,30 @@
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: 1fr repeat(8, minmax(10rem, min-content)) 1fr;
-
     grid-template-rows: repeat(12, minmax(5rem, min-content));
+    
+    @media only screen and (max-width: $bp-largest) {                
+        grid-template-columns: 1fr repeat(8, minmax(9rem, min-content)) 1fr;
+        // grid-template-rows: repeat(12, minmax(5rem, min-content));            
+    }
+    @media only screen and (max-width: $bp-large) {                
+        grid-template-columns: 1fr repeat(7, minmax(10rem, min-content)) 1fr;
+        grid-template-rows: repeat(15, minmax(3rem, min-content));
+        grid-gap: 1.2rem;
+    }
+    @media only screen and (max-width: $bp-medium) {                
+        grid-template-columns: 1fr repeat(5, minmax(10rem, min-content)) 1fr;
+        grid-template-rows: repeat(22, minmax(3rem, min-content));
+        grid-gap: 1.2rem;
+    }
+    @media only screen and (max-width: $bp-small) {                
+        grid-template-columns: 1fr repeat(5, minmax(8rem, min-content)) 1fr;
+        grid-template-rows: repeat(22, minmax(2rem, min-content));
+        grid-gap: 1rem;
+    }
 
 
-    // background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/g2.png);
+    
 
     .overlay {
         position: absolute;
@@ -48,10 +67,20 @@
         position: relative;
         @extend %hexagon;
         background: linear-gradient(to right bottom, rgba($color-dark-orange, .8), rgba($color-orange, .8));
-        width: 20vw;
-        height: 20vw;
+        width: 22vw;
+        height: 22vw;
         font-size: 3rem;
         transition: .2s ease-in-out;
+        @media only screen and (max-width: $bp-large) {                
+        width: 25vw;
+        height: 25vw;
+        }
+        @media only screen and (max-width: $bp-medium) {                
+        width: 35vw;
+        height: 35vw;
+        }
+        
+        
 
         img {
             //trick to fit an image into borders
@@ -79,11 +108,20 @@
         &-gallery-3 {
             grid-column: 6/8;
             grid-row: 2/6;
+            @media only screen and (max-width: $bp-medium) {                
+                grid-column: 2/4;
+                grid-row: 14/19;
+            }
         }
 
         &-gallery-4 {
             grid-column: 8/10;
             grid-row: 2/6;
+            @media only screen and (max-width: $bp-large) {                
+                grid-column: 3/5;
+                grid-row: 11/15;
+            }
+            
         }
 
         &-gallery-5 {
@@ -99,6 +137,10 @@
         &-gallery-7 {
             grid-column: 7/9;
             grid-row: 5/9;
+            @media only screen and (max-width: $bp-medium) {                
+                grid-column: 4/7;
+                grid-row: 14/19;
+            }
         }
 
         &-gallery-8 {
@@ -114,11 +156,19 @@
         &-gallery-10 {
             grid-column: 6/8;
             grid-row: 8/12;
+            @media only screen and (max-width: $bp-medium) {                
+                grid-column: 3/5;
+                grid-row: 18/22;
+            }
         }
 
         &-gallery-11 {
             grid-column: 8/10;
             grid-row: 8/12;
+            @media only screen and (max-width: $bp-large) {                
+                grid-column: 5/7;
+                grid-row: 11/15;
+            }
         }
 
         // h1 {
