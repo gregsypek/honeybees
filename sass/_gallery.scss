@@ -24,6 +24,10 @@
         grid-template-rows: repeat(22, minmax(2rem, min-content));
         grid-gap: 1rem;
     }
+    @media only screen and (max-width: $bp-smallest) {     grid-template-columns: 1fr repeat(4, minmax(8rem, min-content)) 1fr;
+        grid-template-rows: repeat(29, minmax(2rem, min-content));
+        grid-gap: 1.5rem;
+    }
 
 
     
@@ -79,6 +83,10 @@
         width: 35vw;
         height: 35vw;
         }
+        @media only screen and (max-width: $bp-smallest) {                
+        width: 45vw;
+        height: 45vw;
+        }
         
         
 
@@ -132,6 +140,10 @@
         &-gallery-6 {
             grid-column: 5/7;
             grid-row: 5/9;
+            @media only screen and (max-width: $bp-smallest) {                
+                grid-column: 2/4;
+             grid-row: 21/26;
+            }
         }
 
         &-gallery-7 {
@@ -169,20 +181,12 @@
                 grid-column: 5/7;
                 grid-row: 11/15;
             }
+            @media only screen and (max-width: $bp-smallest) {                
+                grid-column: 4/6;
+                grid-row: 21/26;
+            }
         }
 
-        // h1 {
-        //     position: absolute;
-        //     top: 7rem;
-        //     left: 12rem;
-        //     color: $color-cream;
-        // }
-        // p {
-        //     position: absolute;
-        //     font-size: 2rem;
-        //     color: $color-white;
-        //     top: 15rem;
-        //     left: 5rem;
-        // }
+        
     }
 }
