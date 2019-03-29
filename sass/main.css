@@ -312,37 +312,89 @@ header {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   font-size: 2.5rem;
+  grid-gap: 5rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 20px 50px;
+  padding: 2rem 5rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .contact {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
 }
 
 .contact-left {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 2rem;
+      grid-template-areas: "p-1 p-1" "form form" "btn-1 btn-1";
 }
 
 .contact .contact-p.left {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: p-1;
 }
 
 .contact-form {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: form;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   -ms-grid-rows: (auto-fit)[4] 1fr;
       grid-template-rows: repeat(4, auto-fit) 1fr;
-  padding: 5rem;
+  justify-items: center;
   grid-gap: 2rem;
 }
 
-.contact-form input {
-  width: 100%;
+.contact-form input,
+.contact-form textarea {
+  width: 70%;
+}
+
+@media only screen and (max-width: 75em) {
+  .contact-form input,
+  .contact-form textarea {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 50em) {
+  .contact-form input,
+  .contact-form textarea {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 50em) {
+  .contact-form input,
+  .contact-form textarea {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .contact-form input,
+  .contact-form textarea {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 27.5em) {
+  .contact-form input,
+  .contact-form textarea {
+    width: 90%;
+  }
 }
 
 .contact-form input,
@@ -371,35 +423,73 @@ header {
   outline: none;
 }
 
-.contact-form .btn-left {
+.contact .btn-left {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: btn-1;
   width: 20rem;
+  -ms-flex-item-align: bottom;
+      -ms-grid-row-align: bottom;
+      align-self: bottom;
+}
+
+.contact button.btn {
+  height: 6rem;
 }
 
 .contact-right {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-}
-
-.contact-box {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  grid-gap: 5rem;
+  grid-row-gap: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      grid-template-areas: "p-2 p-2" "map map"  "btn-2 btn-2";
 }
 
-.contact-box .contact-p.right {
+.contact-right .contact-p.right {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: p-2;
   -ms-flex-item-align: top;
       -ms-grid-row-align: top;
       align-self: top;
 }
 
-.contact-box .btn-right {
+.contact-right .btn-right {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: btn-2;
   width: 40rem;
   -ms-flex-item-align: bottom;
       -ms-grid-row-align: bottom;
       align-self: bottom;
+}
+
+.contact-right .map {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: map;
+}
+
+.contact-right .map-google {
+  width: 100%;
+  height: 40rem;
+  border: 0;
+}
+
+.contact-p {
+  font-size: 1.5em;
+}
+
+@media only screen and (max-width: 75em) {
+  .contact-p {
+    font-size: 1.2em;
+  }
 }
 
 .about {
@@ -731,6 +821,12 @@ header {
   text-align: center;
   padding: 3rem;
   margin: 0;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .footer p {
+    text-align: left;
+  }
 }
 
 .gallery {
@@ -1311,7 +1407,7 @@ header {
           clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
 
-.contact-form .btn-left, .contact-box .btn-right {
+.contact .btn-left, .contact-right .btn-right {
   font-size: 2.5rem;
   letter-spacing: .3rem;
   font-family: inherit;
@@ -1325,10 +1421,8 @@ header {
   border-radius: 4px;
 }
 
-.contact .contact-p.left, .contact-box .contact-p.right {
+.contact .contact-p.left, .contact-right .contact-p.right {
   text-align: center;
-  font-size: 1.5em;
-  margin-bottom: 15px;
   text-transform: uppercase;
   letter-spacing: .3rem;
   color: #f0e9c1df;

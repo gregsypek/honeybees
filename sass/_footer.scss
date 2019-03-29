@@ -33,6 +33,9 @@ color: $color-cream-2;
         text-align: center;
         padding: 3rem;
         margin: 0;
+        @media only screen and (max-width: $bp-small) {                
+            text-align: left;
+            }
     }
 
 }
