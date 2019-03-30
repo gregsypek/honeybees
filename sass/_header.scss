@@ -1,54 +1,70 @@
-header {
-    // background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/h17.png);
-
+header {   
     background-size: cover;
     background-position: center;
     min-height: 100vh;
+    
+h1 {
+    display: flex;
+    justify-content: center;
+    color: $color-cream;
 
+    text-shadow: 0 0 4px rgba(0, 0, 0, .8);   
+    font-size: 5rem;
+    padding: 4rem;
+    border-bottom: .5rem solid $color-dark-orange;
+   
+    span {
+        margin-left: 3rem;
+        color: $color-olive;
+        text-shadow: 0 0 4px rgba(0, 0, 0, .8);
+    }
+}
 }
 
 .header {
     &-nav {
-        display: flex;
+        display: flex;   
+        position: relative;//for sticky nav 
+        top:0;//for sticky nav 
+        z-index:200;     
+        margin: 0;    
+        background: #333;  
         
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+        padding: .5rem;
 
-
+       
         .logo {
-            height: 10rem;
+            height: 5rem;
             width: auto;
-            margin: 3rem;
-            font-size: 5rem;
+          
+            font-size: 6rem;
 
         }
 
         ul {
+            display:flex;
+            flex:1;
+            background: #333; 
+
             z-index: 4;
             list-style: none;
-            // text-shadow: 0 2px 2px rgba(0, 0, 0, .8);
-
-
+            margin: 0;
+            padding: 0;
+        
             li {
-               
+         
                 display: inline-block;
                 padding: .5rem 1.5rem;
                 margin-left: 3.5rem;
-                background: #333;
+
+              
                 transition: all .2s ease;
-                border: 5px solid transparent;
-
-                &:hover {
-                    border: 5px solid $color-cream-2;
-                    // background: rgba($color-orange, .8);
-                   
+                
+                &:hover a {
+                    color:$color-orange;
                 }
-                // &:hover a {
-                //     color:$color-cream-2;
-                // }
-
-
-
-
             }
 
             font-size: 3.5rem;
@@ -66,14 +82,6 @@ header {
                     text-transform: uppercase;
                     letter-spacing: .3rem;
                 }
-
-                // &:hover,
-                // &:active {
-
-
-
-                //     transform: translateY(15px);
-                // }
             }
         }
 
@@ -90,31 +98,7 @@ header {
         align-items: center;
         justify-content: center;
         align-content: center;
-        font-size: 3rem;
-        padding: 2rem;
-        color: $color-cream; // 
         margin-top: 8rem;
-        text-shadow: 0 0 4px rgba(0, 0, 0, .8);
-
-       
-        span {
-            color: $color-olive;
-            text-shadow: 0 0 4px rgba(0, 0, 0, .8);
-          
-
-        }
-
-        &--title {
-            text-shadow: 0 0 4px rgba(0, 0, 0, .8);
-            align-self: center;
-            font-size: 5rem;
-            padding: 2rem;
-            border-bottom: .5rem solid $color-dark-orange;
-            @extend %bgc-transparent;
-
-            ;
-            // background: rgba(255, 255, 255, .2);
-        }
 
         &--invitation {
             font-size: 2.5rem;
@@ -126,15 +110,7 @@ header {
             letter-spacing: .2rem;
             @extend %bgc-transparent-2;
 
-            // background: #333;
-            // font-style: italic;
-            // text-shadow: 0 0 8px rgba(0, 0, 0, .8);
         }
-
-        // background: rgba(51, 51, 51, .5);
-        // background: rgba(255, 255, 255, .2);
-        // background: rgba(238, 118, 0, 0);
-        // box-shadow: 0 5px 5px rgba(255, 255, 255, 1);
 
 
         p:last-child {
@@ -171,3 +147,11 @@ header {
         transform: translateY(-10px)
     }
 }
+
+//sticky nav
+
+body.fixed-nav nav {
+    position: fixed;
+    box-shadow: 0 5px 0 rgba(0,0,0,0.1);
+    width:100%;
+  }

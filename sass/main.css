@@ -154,25 +154,62 @@ header {
   min-height: 100vh;
 }
 
+header h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff169;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+  font-size: 5rem;
+  padding: 4rem;
+  border-bottom: 0.5rem solid #e06c0d;
+}
+
+header h1 span {
+  margin-left: 3rem;
+  color: #cbe86b;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+}
+
 .header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  position: relative;
+  top: 0;
+  z-index: 200;
+  margin: 0;
+  background: #333;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .5rem;
 }
 
 .header-nav .logo {
-  height: 10rem;
+  height: 5rem;
   width: auto;
-  margin: 3rem;
-  font-size: 5rem;
+  font-size: 6rem;
 }
 
 .header-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: #333;
   z-index: 4;
   list-style: none;
+  margin: 0;
+  padding: 0;
   font-size: 3.5rem;
   font-weight: 400;
 }
@@ -181,14 +218,12 @@ header {
   display: inline-block;
   padding: .5rem 1.5rem;
   margin-left: 3.5rem;
-  background: #333;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
-  border: 5px solid transparent;
 }
 
-.header-nav ul li:hover {
-  border: 5px solid #f0e9c1df;
+.header-nav ul li:hover a {
+  color: #f9a116;
 }
 
 .header-nav ul a {
@@ -224,26 +259,7 @@ header {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  font-size: 3rem;
-  padding: 2rem;
-  color: #fff169;
   margin-top: 8rem;
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
-}
-
-.header-text span {
-  color: #cbe86b;
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
-}
-
-.header-text--title {
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  font-size: 5rem;
-  padding: 2rem;
-  border-bottom: 0.5rem solid #e06c0d;
 }
 
 .header-text--invitation {
@@ -304,6 +320,13 @@ header {
     -webkit-transform: translateY(-10px);
             transform: translateY(-10px);
   }
+}
+
+body.fixed-nav nav {
+  position: fixed;
+  -webkit-box-shadow: 0 5px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 0 rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 
 .contact {
@@ -1428,7 +1451,7 @@ header {
   color: #f0e9c1df;
 }
 
-.header-text--title, .offer table,
+.offer table,
 .offer th,
 .offer td {
   background: rgba(51, 51, 51, 0.8);
