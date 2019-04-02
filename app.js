@@ -67,7 +67,7 @@ overlayClose.addEventListener('click', close);
 //sticky nav
 
 
-const nav = document.querySelector('.header-nav');
+const nav = document.querySelector('.header__burger');
 let topOfNav = nav.offsetTop;
 
 function fixNav() {
@@ -83,3 +83,18 @@ function fixNav() {
 }
 
 window.addEventListener('scroll', fixNav);
+
+
+//burger nav
+
+// const burger = document.querySelector('.header-burger-icons');
+
+// const burger_nav = document.querySelector('.header-burger-nav');
+// const iconBars = document.querySelector('.fa-bars');
+// const iconTimes = document.querySelector('.fa-times');
+
+// burger.addEventListener('click', function () {
+//     iconBars.classList.toggle("on");
+//     iconTimes.classList.toggle("on");
+//     burger_nav.classList.toggle("on");
+// })

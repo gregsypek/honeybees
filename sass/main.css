@@ -148,13 +148,13 @@ h6 {
   margin-top: 10rem;
 }
 
-header {
+.header {
   background-size: cover;
   background-position: center;
   min-height: 100vh;
 }
 
-header h1 {
+.header__top-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -168,13 +168,13 @@ header h1 {
   border-bottom: 0.5rem solid #e06c0d;
 }
 
-header h1 span {
+.header__top-title span {
   margin-left: 3rem;
   color: #cbe86b;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
 }
 
-.header-nav {
+.header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,29 +183,26 @@ header h1 span {
   z-index: 200;
   margin: 0;
   background: #333;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   padding: .5rem;
 }
 
-.header-nav .logo {
-  height: 5rem;
-  width: auto;
-  font-size: 6rem;
+.header__burger {
+  display: inline-block;
 }
 
-.header-nav ul {
+.header__burger-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  position: relative;
   background: #333;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   z-index: 4;
   list-style: none;
   margin: 0;
@@ -214,32 +211,82 @@ header h1 span {
   font-weight: 400;
 }
 
-.header-nav ul li {
+@media only screen and (max-width: 75em) {
+  .header__burger-nav {
+    font-size: 3rem;
+  }
+}
+
+.header__burger li {
   display: inline-block;
   padding: .5rem 1.5rem;
-  margin-left: 3.5rem;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+  margin-left: 3rem;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
 }
 
-.header-nav ul li:hover a {
-  color: #f9a116;
+@media only screen and (max-width: 75em) {
+  .header__burger li {
+    padding: .3rem 1rem;
+    margin-left: 2rem;
+  }
 }
 
-.header-nav ul a {
+.header__burger li a {
+  display: block;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+  vertical-align: center;
   color: #f0e9c1df;
 }
 
-.header-nav ul a:link, .header-nav ul a:visited {
+@media only screen and (max-width: 62.5em) {
+  .header__burger li a {
+    display: none;
+  }
+}
+
+.header__burger li a:link, .header__burger li a:visited {
   padding: .8rem;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: .3rem;
 }
 
-.header-nav--burger .fas {
+.header__burger li:hover a {
+  color: #f9a116;
+}
+
+.header__burger .logo {
+  height: 5rem;
+  width: auto;
+  margin-right: 8rem;
+}
+
+.header__burger-icons {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+}
+
+.header__burger-icons .fa-bars {
+  text-align: right;
+  max-width: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  color: #f0e9c1df;
+  font-size: 5.6rem;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .header__burger-icons .fa-bars {
+    max-width: 40px;
+  }
+}
+
+.header__burger-icons .fa-times {
   display: none;
 }
 
@@ -1303,7 +1350,7 @@ body.fixed-nav nav {
           align-items: center;
 }
 
-.tips-box .header {
+.tips-box .tips__header {
   font-size: 5rem;
   padding: 2rem;
   color: #f9a116;
@@ -1311,7 +1358,7 @@ body.fixed-nav nav {
 }
 
 @media only screen and (max-width: 37.5em) {
-  .tips-box .header {
+  .tips-box .tips__header {
     font-size: 3.5rem;
   }
 }
