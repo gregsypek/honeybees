@@ -70,11 +70,11 @@ overlayClose.addEventListener('click', close);
 const nav = document.querySelector('.header__burger');
 let topOfNav = nav.offsetTop;
 
+
 function fixNav() {
     if(window.scrollY >=topOfNav) {
         document.body.style.paddingTop = nav.offsetHeight + "px";
         document.body.classList.add('fixed-nav');
-
     
     }else {
         document.body.classList.remove('fixed-nav');
@@ -87,14 +87,21 @@ window.addEventListener('scroll', fixNav);
 
 //burger nav
 
-// const burger = document.querySelector('.header-burger-icons');
+const burger = document.querySelector('.fa-bars');
 
-// const burger_nav = document.querySelector('.header-burger-nav');
-// const iconBars = document.querySelector('.fa-bars');
-// const iconTimes = document.querySelector('.fa-times');
 
-// burger.addEventListener('click', function () {
-//     iconBars.classList.toggle("on");
-//     iconTimes.classList.toggle("on");
-//     burger_nav.classList.toggle("on");
-// })
+const slider_nav = document.querySelector('.header__slider-nav');
+const iconBars = document.querySelector('.fa-bars');
+const iconX = document.querySelector('.fa-times');
+
+burger.addEventListener('click', function () {
+    iconBars.classList.toggle("on");
+    iconX.classList.toggle("on");
+    slider_nav.classList.toggle("on");
+})
+
+iconX.addEventListener('click', function() {
+    slider_nav.classList.toggle("on");
+    iconX.classList.toggle("on");
+    iconBars.classList.toggle("on");
+})
