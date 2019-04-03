@@ -1,6 +1,7 @@
 .offer {
     display: grid;
     justify-content: center;
+   
     justify-items: center; // align-content: center;
     // background: rgba(51, 51, 51, .8);
     // background: #333;
@@ -11,9 +12,12 @@
     @media only screen and (max-width: $bp-largest) {      font-size: 2.5rem;
     }
     @media only screen and (max-width: $bp-medium) {      font-size: 2rem;
+        // grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
     }
-    @media only screen and (max-width: $bp-small) {      font-size: 1.8rem;
-    }
+    // @media only screen and (max-width: $bp-smallest) {       font-size: 1.8rem;
+           
+    // }
+   
 
 
     th {
@@ -41,6 +45,10 @@
         border: 2px solid $color-cream-2;
        
        }
+       @media only screen and (max-width: $bp-smallest) {       padding: .2rem .5rem;
+        border: 2px solid $color-cream-2;
+       
+       }
     }
     
 
@@ -54,9 +62,14 @@
         @media only screen and (max-width: $bp-small) {      margin: 2rem;
            
         }
+        // @media only screen and (max-width: $bp-smallest) {       margin: 1rem;
+           
+        //    }
     }
-
-    
+    // .table-first {
+    //    margin-top: 4rem;
+    // }
+   
 
     .table-third {
        

@@ -15,6 +15,13 @@ body {
   }
 }
 
+@media only screen and (max-width: 37.5em) {
+  body {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../img/szablon5.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/szablon5.png);
+  }
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -166,6 +173,10 @@ h6 {
   max-height: 100vh;
 }
 
+.header__top {
+  color: #fff169;
+}
+
 .header__top-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -173,7 +184,6 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #fff169;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
   font-size: 5rem;
   padding: 4rem;
@@ -181,9 +191,22 @@ h6 {
   z-index: 201;
 }
 
+@media only screen and (max-width: 50em) {
+  .header__top-title {
+    font-size: 4rem;
+    padding: 3rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .header__top-title {
+    font-size: 3.5rem;
+    padding: 2.5rem;
+  }
+}
+
 .header__top-title span {
   margin-left: 3rem;
-  color: #cbe86b;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
 }
 
@@ -273,7 +296,6 @@ h6 {
 .header__burger .logo {
   height: 5rem;
   width: auto;
-  margin-right: 8rem;
 }
 
 .header__burger-icons {
@@ -370,6 +392,12 @@ h6 {
   transition: all 4s linear;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .header__slider-nav li {
+    width: 0;
+  }
+}
+
 .header__slider-nav a {
   padding: 2rem;
   line-height: 100%;
@@ -438,12 +466,8 @@ h6 {
   letter-spacing: .3rem;
 }
 
-.header-bee img {
-  position: absolute;
-  top: 90vh;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+.header-text .header-bee img {
+  margin-top: 3rem;
   height: 4rem;
   width: auto;
   background-color: transparent;
@@ -521,6 +545,12 @@ body.fixed-nav nav {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: p-1;
+}
+
+@media only screen and (max-width: 27.5em) {
+  .contact .contact-p.left {
+    font-size: 2.5rem;
+  }
 }
 
 .contact-form {
@@ -615,8 +645,22 @@ body.fixed-nav nav {
       align-self: bottom;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .contact .btn-left {
+    width: 15rem;
+  }
+}
+
 .contact button.btn {
   height: 6rem;
+  font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .contact button.btn {
+    width: 27rem;
+    font-size: 2rem;
+  }
 }
 
 .contact-right {
@@ -648,6 +692,12 @@ body.fixed-nav nav {
   -ms-flex-item-align: bottom;
       -ms-grid-row-align: bottom;
       align-self: bottom;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .contact-right .btn-right {
+    width: 30rem;
+  }
 }
 
 .contact-right .map {
@@ -730,8 +780,8 @@ body.fixed-nav nav {
 
 .about .hexagon {
   position: relative;
-  background: -webkit-gradient(linear, left top, left bottom, from(#e06c0d), to(#f9a116));
-  background: linear-gradient(to bottom, #e06c0d, #f9a116);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f2a65a), to(#772f1a));
+  background: linear-gradient(to bottom, #f2a65a, #772f1a);
   width: 35vw;
   height: 35vw;
   font-size: 3rem;
@@ -769,7 +819,7 @@ body.fixed-nav nav {
   .about .hexagon {
     width: 63vw;
     height: 63vw;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -924,6 +974,13 @@ body.fixed-nav nav {
   }
 }
 
+@media only screen and (max-width: 27.5em) {
+  .about .hexagon h1 {
+    top: 4rem;
+    left: 4.5rem;
+  }
+}
+
 .about .hexagon p {
   position: absolute;
   padding: 1rem;
@@ -960,6 +1017,13 @@ body.fixed-nav nav {
   .about .hexagon p {
     top: 10rem;
     font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 27.5em) {
+  .about .hexagon p {
+    top: 7rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -1363,12 +1427,6 @@ body.fixed-nav nav {
   }
 }
 
-@media only screen and (max-width: 37.5em) {
-  .offer {
-    font-size: 1.8rem;
-  }
-}
-
 .offer th {
   background: #f0e9c1df;
   color: #f0e9c1df;
@@ -1404,6 +1462,15 @@ body.fixed-nav nav {
   .offer th,
   .offer td {
     padding: .5rem 1.5rem;
+    border: 2px solid #f0e9c1df;
+  }
+}
+
+@media only screen and (max-width: 27.5em) {
+  .offer table,
+  .offer th,
+  .offer td {
+    padding: .2rem .5rem;
     border: 2px solid #f0e9c1df;
   }
 }
@@ -1459,6 +1526,14 @@ body.fixed-nav nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 75em) {
+  .tips-box {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
 }
 
 .tips-box .tips__header {
@@ -1589,7 +1664,6 @@ body.fixed-nav nav {
 }
 
 .contact .btn-left, .contact-right .btn-right {
-  font-size: 2.5rem;
   letter-spacing: .3rem;
   font-family: inherit;
   padding: 1.5rem;

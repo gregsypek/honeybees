@@ -7,8 +7,8 @@ $color-olive: #cbe86b;
 $color-cream-2: #f0e9c1df;
 $color-orange: #f9a116; //rgba(249, 161, 27, 1)
 $color-dark-orange: #e06c0d; //(238,118,0) 
-$color-dark-orange-2: #e46b1bbb; //(238,118,0) 
-$color-dark-orange-3:#723e08; //(238,118,0) 
+$color-dark-orange-2: #F2A65A; //(238,118,0) 
+$color-dark-orange-3:#772F1A; //(238,118,0) 
 $color-cream: #fff169; //rgba(255, 241, 105, 1)
 $color-dark-green: #1b5e20;
 $color-light-green:#c8ebc9;
@@ -36,6 +36,9 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/szablon4.png);
     @media only screen and (max-width: $bp-medium) {                
         background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/szablon4x800.png);
+        }
+    @media only screen and (max-width: $bp-small) {                
+        background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/szablon5.png);
         }
     background-repeat: no-repeat;
     background-size:cover;

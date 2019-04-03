@@ -29,12 +29,16 @@
         ;
         // grid-template-rows: repeat(12, minmax(3rem, min-content));      
     }
+    // @media only screen and (max-width: $bp-smallest) {                
+    //      grid-template-columns: 1fr repeat(3, minmax(6rem, min-content)) 1fr;
+    // ;
+    // }
     
 
     .hexagon {
         position: relative; // margin: 4rem;
         @extend %hexagon;
-        background: linear-gradient(to  bottom, rgba($color-dark-orange, 1), rgba($color-orange, 1)); 
+        background: linear-gradient(to  bottom, rgba($color-dark-orange-2, 1), rgba($color-dark-orange-3, 1)); 
         width: 35vw;
         height: 35vw;
         font-size: 3rem;
@@ -57,7 +61,7 @@
         @media only screen and (max-width: $bp-smallest) {                
             width: 63vw;
             height:63vw;
-            font-size: 2rem; 
+            font-size: 1.8rem; 
         }
        
       
@@ -143,6 +147,10 @@
                 top: 6rem;   
                 left: 8rem;          
             }
+            @media only screen and (max-width: $bp-smallest) {                
+                top: 4rem;   
+                left: 4.5rem; 
+            }
             
             
             
@@ -174,6 +182,10 @@
             @media only screen and (max-width: $bp-small) {                
                 top: 10rem;
                 font-size: 1.7rem;  
+            }
+            @media only screen and (max-width: $bp-smallest) {                
+                top: 7rem;
+                font-size: 1.6rem;  
             }
             
             

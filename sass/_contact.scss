@@ -10,6 +10,7 @@
       grid-template-columns: 1fr ;
       grid-template-rows: 1fr 1fr;
     }
+   
   
     &-left {
     
@@ -27,6 +28,9 @@
     @extend %paragraph;
 
     grid-area: p-1;
+    @media only screen and (max-width: $bp-smallest) {                
+      font-size: 2.5rem;
+      }
      
   }
 
@@ -100,10 +104,20 @@
     grid-area: btn-1;
     width: 20rem;
     align-self: bottom;
+    @media only screen and (max-width: $bp-small) {                
+      width: 15rem;
+     }
   
   }
   button.btn {     
     height: 6rem; 
+    font-size: 2.5rem;
+    @media only screen and (max-width: $bp-small) {                
+      width: 27rem; 
+      font-size: 2rem;
+     //  height: 9rem;
+     }    
+    
      
   }
     &-right {
@@ -115,11 +129,7 @@
                           "map map" 
                           "btn-2 btn-2";
       
-      @media only screen and (max-width: $bp-largest) {                
-        // grid-row:2/-1;
-        // grid-column: 1/-1; 
-        // justify-self: center;     
-      }    
+     
       
       .contact-p.right {  
         grid-area: p-2;        
@@ -131,6 +141,10 @@
       @extend %btn;
       width: 40rem;
       align-self: bottom;
+      @media only screen and (max-width: $bp-small) {                
+       width: 30rem; 
+      //  height: 9rem;
+      }    
     }
     .map {
       grid-area: map;
@@ -156,6 +170,7 @@
       }
   }
   
+  
         // .map {          
         //     position: relative;
         //     padding-bottom: 75%; // Tutaj regulujemy wysokość
@@ -174,5 +189,6 @@
     @media only screen and (max-width: $bp-largest) {                
       font-size: 1.2em;
     }  
+    
   }
 }
