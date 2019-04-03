@@ -1,11 +1,18 @@
 body {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../img/szablon3.png);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/szablon3.png);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../img/szablon4.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/szablon4.png);
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+}
+
+@media only screen and (max-width: 50em) {
+  body {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../img/szablon4x800.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/szablon4x800.png);
+  }
 }
 
 html {
@@ -339,7 +346,10 @@ h6 {
   right: -100%;
   width: 100%;
   font-family: inherit;
-  background-color: #333333;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../img/slider1.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/slider1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   -webkit-transition: all .4s linear;
   transition: all .4s linear;
   z-index: 206;
@@ -363,7 +373,7 @@ h6 {
 .header__slider-nav a {
   padding: 2rem;
   line-height: 100%;
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #f9a116;
   text-decoration: none;
 }

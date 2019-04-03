@@ -190,7 +190,10 @@
             width: 100%;
             font-family: inherit;
             // top: -200px;
-            background-color: rgba($color-grey, 1 );
+            // background-color: rgba($color-grey, 1 );
+            background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/slider1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
             transition: all .4s linear;
             z-index: 206;           
             text-transform: uppercase;
@@ -209,7 +212,7 @@
                 // text-align: center;
                 padding: 2rem;
                 line-height: 100%;
-                font-size: 2.5rem;
+                font-size: 3rem;
                 color: $color-orange;
                 text-decoration: none;
                 &:hover {
