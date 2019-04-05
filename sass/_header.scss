@@ -186,14 +186,14 @@
             display: block;
         }
         &-nav {
-            display: grid;
-            grid-template-columns: repeat(auto-fit,minmax(30rem, 1fr));
-            justify-items: center;
-            grid-gap: 2rem;
+            // display: grid;
+            // grid-template-columns: repeat(auto-fit,minmax(30rem, 1fr));
+            // justify-items: center;
+            // grid-gap: 2rem;
             padding: 25px;
             margin: 0;
             position: fixed;
-            overflow: hidden;
+            // overflow: hidden;
             top:54px;
             right:  -100%;
             width: 100%;
@@ -220,13 +220,14 @@
                 }
             }
             a {
-                // display: block;
-                // text-align: center;
+                display: block;
+                
                 padding: 2rem;
-                line-height: 100%;
+                // line-height: 100%;
                 font-size: 3rem;
                 color: $color-orange;
                 text-decoration: none;
+                
                 &:hover {
                     color: $color-cream-2;
                 }
@@ -238,6 +239,8 @@
                 top:54px;
                 right:0;
                 width: 100%;
+                // text-align: center;
+                z-index: 300;
                 font-family: $font-primary;
             }
         }

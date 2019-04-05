@@ -1,6 +1,6 @@
 body {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../img/szablon4.png);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/szablon4.png);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../img/szablon3.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/szablon3.png);
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
@@ -354,16 +354,9 @@ h6 {
 }
 
 .header__slider-nav {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  justify-items: center;
-  grid-gap: 2rem;
   padding: 25px;
   margin: 0;
   position: fixed;
-  overflow: hidden;
   top: 54px;
   right: -100%;
   width: 100%;
@@ -399,8 +392,8 @@ h6 {
 }
 
 .header__slider-nav a {
+  display: block;
   padding: 2rem;
-  line-height: 100%;
   font-size: 3rem;
   color: #f9a116;
   text-decoration: none;
@@ -416,6 +409,7 @@ h6 {
   top: 54px;
   right: 0;
   width: 100%;
+  z-index: 300;
   font-family: "Sansita", sans-serif;
 }
 
