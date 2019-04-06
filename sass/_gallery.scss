@@ -58,8 +58,11 @@
 
         &-inner {
             background: $color-dark-orange;
-            width: 700px;
+            width: 95vw;
             padding: 20px;
+            @media only screen and (max-width: $bp-large) {  
+                padding: 10px;  
+            }
         }
 
         img {
