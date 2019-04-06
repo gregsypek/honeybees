@@ -1,18 +1,11 @@
 body {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../img/szablon3.png);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/szablon3.png);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../img/szablon6.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/szablon6.png);
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-}
-
-@media only screen and (max-width: 50em) {
-  body {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../img/szablon4x800.png);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/szablon4x800.png);
-  }
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -174,7 +167,8 @@ h6 {
 }
 
 .header__top {
-  color: #fff169;
+  color: #f9a116;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
 }
 
 .header__top-title {
@@ -184,7 +178,7 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+  letter-spacing: .2rem;
   font-size: 5rem;
   padding: 4rem;
   border-bottom: 0.5rem solid #e06c0d;
@@ -207,7 +201,6 @@ h6 {
 
 .header__top-title span {
   margin-left: 3rem;
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
 }
 
 .header__nav {
@@ -357,7 +350,7 @@ h6 {
   padding: 25px;
   margin: 0;
   position: fixed;
-  top: 54px;
+  top: 56px;
   right: -100%;
   width: 100%;
   font-family: inherit;
@@ -406,7 +399,7 @@ h6 {
 .header__slider-nav.on {
   margin: 0;
   z-index: 205;
-  top: 54px;
+  top: 56px;
   right: 0;
   width: 100%;
   z-index: 300;
@@ -432,8 +425,15 @@ h6 {
   margin-top: 8rem;
 }
 
+@media only screen and (max-width: 75em) {
+  .header-text {
+    margin-top: 8.5rem;
+  }
+}
+
 .header-text--invitation {
-  font-size: 2.5rem;
+  padding: 2rem;
+  font-size: 3rem;
   width: 40vw;
   text-align: center;
   -ms-flex-item-align: center;
@@ -774,8 +774,8 @@ body.fixed-nav nav {
 
 .about .hexagon {
   position: relative;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f2a65a), to(#772f1a));
-  background: linear-gradient(to bottom, #f2a65a, #772f1a);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f9a116), to(#e06c0d));
+  background: linear-gradient(to bottom, #f9a116, #e06c0d);
   width: 35vw;
   height: 35vw;
   font-size: 3rem;
@@ -978,12 +978,11 @@ body.fixed-nav nav {
 .about .hexagon p {
   position: absolute;
   padding: 1rem;
-  font-size: 2rem;
-  color: #f2e9e1;
+  font-size: 2.5rem;
+  color: #333;
   top: 15rem;
   left: 2rem;
   letter-spacing: .2rem;
-  text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
 }
 
 @media only screen and (max-width: 75em) {
@@ -1017,7 +1016,7 @@ body.fixed-nav nav {
 @media only screen and (max-width: 27.5em) {
   .about .hexagon p {
     top: 7rem;
-    font-size: 1.6rem;
+    padding: .2rem;
   }
 }
 
@@ -1684,9 +1683,8 @@ body.fixed-nav nav {
 }
 
 .header-text--invitation, .tips-box {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../img/sm-bgc.png);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/sm-bgc.png);
   z-index: 100;
   padding: .8rem;
+  color: #f0e9c1df;
 }
 /*# sourceMappingURL=main.css.map */

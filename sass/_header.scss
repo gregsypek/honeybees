@@ -4,15 +4,25 @@
     background-size: cover;
     background-position: center;
     max-height: 100vh;
+    // background-image:  url(../img/barrel.png);
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: $bp-medium
     &__top  {
-        color: $color-cream;
+        color: $color-orange;
+        text-shadow: 4px 4px 8px rgba(0, 0, 0, .8);
+       
+      
 
         &-title{
             display: flex;
             justify-content: center;
             // color: $color-cream;
+            // text-transform: uppercase;
+            letter-spacing: .2rem;
 
-            text-shadow: 0 0 4px rgba(0, 0, 0, .8);   
+           
             font-size: 5rem;
             padding: 4rem;
             border-bottom: .5rem solid $color-dark-orange;
@@ -29,7 +39,7 @@
             span {
                 margin-left: 3rem;
                 // color: $color-olive;
-                text-shadow: 0 0 4px rgba(0, 0, 0, .8);
+                // text-shadow: 0 0 4px rgba(0, 0, 0, .8);
             }
         }
     }
@@ -194,7 +204,7 @@
             margin: 0;
             position: fixed;
             // overflow: hidden;
-            top:54px;
+            top:56px;
             right:  -100%;
             width: 100%;
             font-family: inherit;
@@ -236,7 +246,7 @@
                 // top:60px;
                 margin: 0;
                 z-index: 205;
-                top:54px;
+                top:56px;
                 right:0;
                 width: 100%;
                 // text-align: center;
@@ -245,7 +255,7 @@
             }
         }
     }
-
+   
     &-text {
         display: flex;
         flex-direction: column;
@@ -253,15 +263,45 @@
         justify-content: center;
         align-content: center;
         margin-top: 8rem;
+        // .header__img {
+        //     width: 60rem;
+        //     position: absolute;
+        //     top: 40%;
+        //     left: 50%;
+        //     transform: translate(-50%,-50%);
+                   
+        //            @media only screen and (max-width: $bp-largest) {                
+        //             top: 39%;
+        //             }
+        //             @media only screen and (max-width: $bp-large) {                
+        //                 top: 38%;
+        //                 }
+        //                 @media only screen and (max-width: $bp-medium) {                
+        //                     top: 35%;
+        //                     }
+        //                     @media only screen and (max-width: $bp-medium) {                
+        //                         width: 50rem;
+        //                         top: 35%;
+        //                         }
+        //         }
+                    
+                    
+        @media only screen and (max-width: $bp-largest) {                
+            margin-top: 8.5rem;
+            }
+       
+      
 
         &--invitation {
-            font-size: 2.5rem;
+            padding: 2rem;
+            font-size: 3rem;
             width: 40vw;
             text-align: center;
             align-self: center;
             color: $color-white;
             font-weight: 400;
             letter-spacing: .2rem;
+           
             @extend %bgc-transparent-2;
 
             @media only screen and (max-width: $bp-medium) {                

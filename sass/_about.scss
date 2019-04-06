@@ -38,7 +38,7 @@
     .hexagon {
         position: relative; // margin: 4rem;
         @extend %hexagon;
-        background: linear-gradient(to  bottom, rgba($color-dark-orange-2, 1), rgba($color-dark-orange-3, 1)); 
+        background: linear-gradient(to  bottom, rgba($color-orange, 1), rgba($color-dark-orange, 1)); 
         width: 35vw;
         height: 35vw;
         font-size: 3rem;
@@ -160,12 +160,12 @@
         p {
             position: absolute;
             padding: 1rem;
-            font-size: 2rem;
-            color: $color-white;
+            font-size: 2.5rem;
+            color: $color-grey;
             top: 15rem;
             left: 2rem;
             letter-spacing: .2rem;
-            text-shadow: 0 0 2px rgba(0,0, 0, .8);
+            // text-shadow: 0 0 2px rgba(0,0, 0, .8);
             @media only screen and (max-width: $bp-largest) {
                 font-size: 1.8rem;
                 top: 11rem;
@@ -185,7 +185,8 @@
             }
             @media only screen and (max-width: $bp-smallest) {                
                 top: 7rem;
-                font-size: 1.6rem;  
+                padding: .2rem;
+                // font-size: 1.6rem;  
             }
             
             

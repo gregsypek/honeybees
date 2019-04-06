@@ -33,9 +33,9 @@ $bp-smallest: 27.5em; //440px
 
 
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/szablon3.png);
+    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/szablon6.png);
     @media only screen and (max-width: $bp-medium) {                
-        background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/szablon4x800.png);
+        // background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/szablon4x800.png);
         }
     @media only screen and (max-width: $bp-small) {                
         background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/szablon5.png);
