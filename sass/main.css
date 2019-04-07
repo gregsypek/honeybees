@@ -396,6 +396,12 @@ h6 {
   color: #f0e9c1df;
 }
 
+@media only screen and (max-width: 50em) {
+  .header__slider-nav a {
+    padding: 1.2rem;
+  }
+}
+
 .header__slider-nav.on {
   margin: 0;
   z-index: 205;
@@ -1166,13 +1172,20 @@ body.fixed-nav nav {
 
 .gallery .overlay-inner {
   background: #e06c0d;
-  width: 95vw;
+  width: 700px;
+  height: auto;
   padding: 20px;
 }
 
 @media only screen and (max-width: 62.5em) {
   .gallery .overlay-inner {
     padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 50em) {
+  .gallery .overlay-inner {
+    width: 95vw;
   }
 }
 

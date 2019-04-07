@@ -217,6 +217,8 @@
             z-index: 206;           
             text-transform: uppercase;
              box-shadow: 0 5px 0 rgba(0,0,0,0.1);
+            
+
             li {
                 align-self: center;
                 letter-spacing: .8rem;
@@ -237,9 +239,13 @@
                 font-size: 3rem;
                 color: $color-orange;
                 text-decoration: none;
+               
                 
                 &:hover {
                     color: $color-cream-2;
+                }
+                @media only screen and (max-width: $bp-medium) {
+                    padding: 1.2rem;
                 }
             }
             &.on {
