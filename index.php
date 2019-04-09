@@ -301,52 +301,7 @@
             </table>
         </div>
     </section>
-    <!-- <section class="contact map-box" name="form" id="form">
-
-        <form method="post" action="mailer.php" class="contact-form">
-
-            <?php
-            if($_GET['success'] == 1)
-                 echo "<div class='form-messages success'>Thank You! Your message has been sent.</div>";
-             else
-                 echo "<div class='form-messages error'>Oops! Something went wrong and we couldn't send your message</div>";
-        ?>
-            <div class="form-messages success">
-                Thank You! Your message has been sent.
-            </div>          
-
-            <div>
-                <label for="name">Imię i nazwisko</label>
-            </div>
-            <div>
-                <input type="text" name="name" id="name" placeholder="Imię i nazwisko" required />
-            </div>
-
-
-            <div>
-                <label for="email">Email</label>
-            </div>
-            <div>
-                <input type="email" name="email" id="email" placeholder="Adres e-mail" required />
-
-            </div>
-
-            </div>
-
-            <div class="col span-1-of-3">
-                <label>Zostaw wiadomość</label>
-            </div>
-            <div>
-                <textarea rows="5" columns="10" name="message" id="message" placeholder="Treść wiadomości"
-                    required></textarea>
-            </div>
-            <div class="col span-2-of-3">
-                <input type="submit" value="Wyślij!">
-            </div>
-
-        </form>
-
-    </section> -->
+   
 
     <section class="contact b-top" id="contact">
 
@@ -357,26 +312,26 @@
                 <p class="contact-p left">Wyślij do nas wiadomość</p>
 
             <form class="contact-left__form" action="mailer.php" method="post">
-                    <!-- <?php
+                    <?php
 
 
                     if (isset($_GET['success'])) {
                     
                         if ($_GET['success'] == 1) {
                     
-                           echo "<div class=\"form-messages success\">Dziekuje. Twój email został wysłany.</div>";
+                           echo "<div class=\"form-messages success\">Dziękuje. Twój email został wysłany.</div>";
                     
                         }
                     
                         if ($_GET['success'] == -1) {
                     
-                           echo "<div class=\"form-messages error\">Oops! Coś poszło nie tak! Spróbuj jeszcze raz!</div>";
+                           echo "<div class=\"form-messages error\">Niestety! Coś poszło nie tak! Spróbuj jeszcze raz!</div>";
                     
                         }
                     
                     }
                            
-                            ?> -->
+                    ?>
 
 
                 <input type="text" name="name" id="name" placeholder="Twoje imię i nazwisko" required>
