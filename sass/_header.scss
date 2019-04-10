@@ -93,13 +93,34 @@
                 display: inline-block;// wylacz zeby utworzyc
                 padding: .5rem 1.5rem;
                 // text-align: right;
-                margin-left: 3rem;
+                margin-left: 8rem;
                 
                 transition: all 1s ease;
+                @media only screen and (max-width: $bp-biggest) {                
+                   
+                    margin-left: 6rem;
+                    
+                    }
+                @media only screen and (max-width: $bp-big) {                
+                    padding: .3rem 1rem;
+                    margin-left: 4.5rem;
+                    
+                    }
+                
+                // @media only screen and (max-width: $bp-big) {                
+                //     padding: .3rem 1rem;
+                //     margin-left: 3.5rem;
+                    
+                //     }
 
                 @media only screen and (max-width: $bp-largest) {                
-                    padding: .3rem 1rem;
-                    margin-left: 2rem;
+                   
+                    margin-left: 3.3rem;
+                    
+                    }
+                @media only screen and (max-width: $bp-smallest) {                
+                  
+                    margin-left: 1rem;
                     
                     }
                     
@@ -136,7 +157,11 @@
             
             height: 5rem;
             width: auto;
-            // margin-right:8rem;
+            margin-right:5rem;
+            @media only screen and (max-width: $bp-small) {                
+                margin-right:0;
+                
+                }
 
                       
         }
@@ -268,7 +293,7 @@
         align-items: center;
         justify-content: center;
         align-content: center;
-        margin-top: 8rem;
+        margin-top: 12rem;
         // .header__img {
         //     width: 60rem;
         //     position: absolute;
@@ -293,7 +318,7 @@
                     
                     
         @media only screen and (max-width: $bp-largest) {                
-            margin-top: 8.5rem;
+            margin-top: 10rem;
             }
        
       
@@ -330,8 +355,8 @@
                 // top: 90vh;
                 // left: 50%;
                 // transform: translate(-50%, -50%);
-                margin-top: 3rem;
-                height: 4rem;
+                margin-top: 4rem;
+                height: 4.5rem;
                 width: auto;
                 background-color: transparent;
                 animation: beeAnimation 1s ease-in-out infinite;

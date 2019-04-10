@@ -249,15 +249,33 @@ h6 {
 .header__burger li {
   display: inline-block;
   padding: .5rem 1.5rem;
-  margin-left: 3rem;
+  margin-left: 8rem;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
 
-@media only screen and (max-width: 75em) {
+@media only screen and (max-width: 100em) {
+  .header__burger li {
+    margin-left: 6rem;
+  }
+}
+
+@media only screen and (max-width: 90em) {
   .header__burger li {
     padding: .3rem 1rem;
-    margin-left: 2rem;
+    margin-left: 4.5rem;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .header__burger li {
+    margin-left: 3.3rem;
+  }
+}
+
+@media only screen and (max-width: 27.5em) {
+  .header__burger li {
+    margin-left: 1rem;
   }
 }
 
@@ -289,6 +307,13 @@ h6 {
 .header__burger .logo {
   height: 5rem;
   width: auto;
+  margin-right: 5rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .header__burger .logo {
+    margin-right: 0;
+  }
 }
 
 .header__burger-icons {
@@ -428,12 +453,12 @@ h6 {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  margin-top: 8rem;
+  margin-top: 12rem;
 }
 
 @media only screen and (max-width: 75em) {
   .header-text {
-    margin-top: 8.5rem;
+    margin-top: 10rem;
   }
 }
 
@@ -467,8 +492,8 @@ h6 {
 }
 
 .header-text .header-bee img {
-  margin-top: 3rem;
-  height: 4rem;
+  margin-top: 4rem;
+  height: 4.5rem;
   width: auto;
   background-color: transparent;
   -webkit-animation: beeAnimation 1s ease-in-out infinite;
