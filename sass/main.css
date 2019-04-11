@@ -453,12 +453,12 @@ h6 {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  margin-top: 12rem;
+  margin-top: 20rem;
 }
 
 @media only screen and (max-width: 75em) {
   .header-text {
-    margin-top: 10rem;
+    margin-top: 15rem;
   }
 }
 
@@ -533,6 +533,8 @@ h6 {
 
 body.fixed-nav nav {
   position: fixed;
+  -webkit-box-shadow: 0 5px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 0 rgba(0, 0, 0, 0.1);
   width: 100%;
 }
 
@@ -998,21 +1000,21 @@ body.fixed-nav nav {
 @media only screen and (max-width: 50em) {
   .about .hexagon h1 {
     top: 8rem;
-    left: 7rem;
+    left: 9rem;
   }
 }
 
 @media only screen and (max-width: 37.5em) {
   .about .hexagon h1 {
     top: 6rem;
-    left: 8rem;
+    left: 7rem;
   }
 }
 
 @media only screen and (max-width: 27.5em) {
   .about .hexagon h1 {
     top: 4rem;
-    left: 4.5rem;
+    left: 6.5rem;
   }
 }
 
@@ -1693,6 +1695,13 @@ body.fixed-nav nav {
   .tips__movie {
     width: 80vw;
     height: 45vw;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .tips__movie {
+    width: 90vw;
+    height: 51vw;
   }
 }
 
