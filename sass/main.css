@@ -462,6 +462,12 @@ h6 {
   }
 }
 
+@media only screen and (max-width: 37.5em) {
+  .header-text {
+    margin-top: 10rem;
+  }
+}
+
 .header-text--invitation {
   padding: 2rem;
   font-size: 3rem;
