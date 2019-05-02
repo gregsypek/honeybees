@@ -38,7 +38,7 @@
     .hexagon {
         position: relative; // margin: 4rem;
         @extend %hexagon;
-        background: linear-gradient(to  bottom, rgba($color-orange, 1), rgba($color-dark-orange, 1)); 
+        background: linear-gradient(to bottom, rgba($color-orange, 1), rgba($color-dark-orange, 1)); 
         width: 35vw;
         height: 35vw;
         font-size: 3rem;

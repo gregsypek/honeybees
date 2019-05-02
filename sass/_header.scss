@@ -323,6 +323,9 @@
         @media only screen and (max-width: $bp-small) {                
             margin-top: 10rem;
             }
+        @media only screen and (max-width: $bp-smallest) {                
+            margin-top: 5rem;
+            }
        
       
 
