@@ -1,6 +1,6 @@
 body {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../img/szablon6.png);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/szablon6.png);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../img/szablon666.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/szablon666.png);
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
@@ -453,25 +453,33 @@ h6 {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  margin-top: 20rem;
+  margin-top: 8rem;
 }
 
 @media only screen and (max-width: 75em) {
   .header-text {
-    margin-top: 15rem;
+    margin-top: 6rem;
   }
 }
 
 @media only screen and (max-width: 37.5em) {
   .header-text {
-    margin-top: 10rem;
+    margin-top: 5rem;
   }
 }
 
 @media only screen and (max-width: 27.5em) {
   .header-text {
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
+}
+
+.header-text .adress {
+  font-size: 2rem;
+}
+
+.header-text .adress > p {
+  margin: .3rem;
 }
 
 .header-text--invitation {
@@ -496,6 +504,7 @@ h6 {
 @media only screen and (max-width: 37.5em) {
   .header-text--invitation {
     width: 60vw;
+    font-size: 2.5rem;
   }
 }
 
@@ -573,14 +582,16 @@ body.fixed-nav nav {
 }
 
 .contact button.btn,
-.contact input[type="submit"] {
+.contact input[type="submit"],
+.contact .phone {
   height: 6rem;
   font-size: 2.5rem;
 }
 
 @media only screen and (max-width: 37.5em) {
   .contact button.btn,
-  .contact input[type="submit"] {
+  .contact input[type="submit"],
+  .contact .phone {
     width: 27rem;
     font-size: 2rem;
   }
@@ -704,6 +715,7 @@ body.fixed-nav nav {
   display: block;
   width: 20rem;
   margin-top: 2rem;
+  cursor: pointer;
   -ms-flex-item-align: bottom;
       -ms-grid-row-align: bottom;
       align-self: bottom;
@@ -760,6 +772,17 @@ body.fixed-nav nav {
   width: 100%;
   height: 40rem;
   border: 0;
+}
+
+.contact-right a.contact-btn {
+  text-decoration: none;
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contact-p {
@@ -1659,6 +1682,12 @@ body.fixed-nav nav {
 
 .tips-box .slider .active-slide {
   display: block;
+  color: white;
+}
+
+.tips-box address {
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .tips-box .slide-dots {

@@ -11,7 +11,8 @@
       grid-template-rows: 1fr 1fr;
     }
      button.btn,
-     input[type="submit"] {     
+     input[type="submit"],
+     .phone {     
       height: 6rem; 
       font-size: 2.5rem;
       @media only screen and (max-width: $bp-small) {                
@@ -69,7 +70,8 @@
         // grid-gap: 2rem;    
             input,
           textarea,
-          input[type="submit"] {
+          input[type="submit"],
+           {
             width: 70%;
 
             // display: block;
@@ -108,7 +110,8 @@
             input[type="email"],
             input[type="submit"]
             select,
-            textarea {
+            textarea,
+             {
             
             
               border-radius: 3px;
@@ -117,6 +120,7 @@
               
               
             }
+           
           
             textarea:focus,
             input:focus {
@@ -134,12 +138,14 @@
       //   grid-area: btn-1;
       // }
       // .btn-left,
-      input[type="submit"] {
+      input[type="submit"]
+       {
         display: block;
         @extend %btn;
         // grid-area: btn-1;
         width: 20rem;
         margin-top: 2rem;
+        cursor: pointer;
         align-self: bottom;
         @media only screen and (max-width: $bp-small) {                
           width: 15rem;
@@ -187,6 +193,13 @@
             height: 40rem;
       
             border: 0;
+      }
+      a.contact-btn {
+        text-decoration: none;
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+       
       }
   }
   
