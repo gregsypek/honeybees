@@ -62,8 +62,6 @@ const items = document.querySelectorAll('.hexagon');
 items.forEach(item => item.addEventListener('click', handleClick));
 overlayClose.addEventListener('click', close);
 
-
-
 //sticky nav
 
 
@@ -83,7 +81,6 @@ function fixNav() {
 }
 
 window.addEventListener('scroll', fixNav);
-
 
 //burger nav
 
@@ -105,10 +102,6 @@ iconX.addEventListener('click', function() {
     iconX.classList.toggle("on");
     iconBars.classList.toggle("on");
 })
-
-
-
-
 
 //
 //JQUERY CODE

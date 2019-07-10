@@ -34,8 +34,21 @@
   z-index: 100;
   padding: .8rem;
   color: $color-cream-2;
-  
-  // border: 3px solid $color-cream-2;
+}
+
+%header {
+  text-align: center;
+  margin: 3rem auto 6rem;
+  width: 50%;
+  font-size: 5rem;
+  padding: 2rem;
+  color: $color-orange;
+  letter-spacing: .3rem;
+  // border-bottom: .5rem solid $color-dark-orange;
+  @media only screen and (max-width: $bp-small) {                
+    font-size: 3.5rem;
+    margin: 1rem auto 4rem;
+}
 }
 
 

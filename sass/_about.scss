@@ -20,21 +20,12 @@
         grid-template-rows: repeat(20, minmax(8rem, min-content));
         grid-gap: 1rem;
         ;
-        // grid-template-rows: repeat(12, minmax(3rem, min-content));      
     }
      @media only screen and (max-width: $bp-small) {                
-        // grid-template-columns: 1fr repeat(3, minmax(10rem, min-content)) 1fr;
         grid-template-rows: repeat(20, minmax(3rem, min-content));
         grid-gap: 1.5rem;
         ;
-        // grid-template-rows: repeat(12, minmax(3rem, min-content));      
     }
-    // @media only screen and (max-width: $bp-smallest) {                
-    //      grid-template-columns: 1fr repeat(3, minmax(6rem, min-content)) 1fr;
-    // ;
-    // }
-    
-
     .hexagon {
         position: relative; // margin: 4rem;
         @extend %hexagon;
@@ -63,10 +54,6 @@
             height:63vw;
             font-size: 1.8rem; 
         }
-       
-      
-       
-
         img {
             width: auto;
             height: 100%;
@@ -151,9 +138,6 @@
                 top: 4rem;   
                 left: 6.5rem; 
             }
-            
-            
-            
            
         }
 
@@ -161,7 +145,7 @@
             position: absolute;
             padding: 1rem;
             font-size: 2.5rem;
-            color: $color-grey;
+            color: $color-brown-2;
             top: 15rem;
             left: 2rem;
             letter-spacing: .2rem;
@@ -169,7 +153,6 @@
             @media only screen and (max-width: $bp-largest) {
                 font-size: 1.8rem;
                 top: 11rem;
-            
              }
              @media only screen and (max-width: $bp-large) {                
                 font-size: 1.5rem;                
@@ -186,9 +169,7 @@
             @media only screen and (max-width: $bp-smallest) {                
                 top: 7rem;
                 padding: .2rem;
-                // font-size: 1.6rem;  
             }
-            
             
         }
     }

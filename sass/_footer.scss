@@ -7,6 +7,7 @@
     &-nav {
         display: flex;        
         justify-content: end;
+        align-content: center;
         list-style: none;
         margin: 0;
         padding-right: 5rem;
@@ -24,7 +25,7 @@ a {
     color: $color-light-black;
     transition: color .2s ease;
     &:hover {
-color: $color-cream-2;
+    color: $color-cream-2;
     }
 }
 
@@ -38,6 +39,13 @@ color: $color-cream-2;
         @media only screen and (max-width: $bp-small) {                
             text-align: left;
             }
+    }
+    img.bee-grey {
+        width: 3rem;
+       
+        &:hover {
+            animation: beeAnimation 1.3s ease-in-out infinite;
+        }
     }
 
 }

@@ -1,4 +1,9 @@
-.gallery {
+section.gallery {
+    h2.gallery__header {
+        @extend %header;
+    }
+
+.gallery__box {
     position: relative;
     display: grid;
     grid-gap: 1rem;
@@ -7,7 +12,6 @@
     
     @media only screen and (max-width: $bp-largest) {                
         grid-template-columns: 1fr repeat(8, minmax(9rem, min-content)) 1fr;
-        // grid-template-rows: repeat(12, minmax(5rem, min-content));            
     }
     @media only screen and (max-width: $bp-large) {                
         grid-template-columns: 1fr repeat(7, minmax(10rem, min-content)) 1fr;
@@ -28,10 +32,9 @@
         grid-template-rows: repeat(29, minmax(2rem, min-content));
         grid-gap: 1.5rem;
     }
-
-
-    
-
+    &__header {
+        @extend %header;
+    }
     .overlay {
         position: absolute;
         background: rgba(0, 0, 0, 0.7);
@@ -71,8 +74,6 @@
                 width: 95vw;
                
             }
-           
-           
         }
 
         img {
@@ -104,9 +105,6 @@
         width: 45vw;
         height: 45vw;
         }
-        
-        
-
         img {
             //trick to fit an image into borders
             width: 100%;
@@ -146,7 +144,6 @@
                 grid-column: 3/5;
                 grid-row: 11/15;
             }
-            
         }
 
         &-gallery-5 {
@@ -206,4 +203,5 @@
 
         
     }
+}
 }
