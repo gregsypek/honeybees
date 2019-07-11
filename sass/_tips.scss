@@ -31,6 +31,12 @@
                 opacity: 0;
                 height: 25rem;
                 width: 60vw;
+                // text-align: center;
+                color: $color-cream-2;
+
+               
+
+
                 animation: slideOn 5s ease-in forwards;
                 @media only screen and (max-width: $bp-medium) {                
                     width: 80vw;
@@ -40,13 +46,20 @@
                 }
 
                 .quote {
-                    padding: 5rem;
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    padding: 1rem;
                     font-size: 2.5rem;
                     text-align: center;
-                    line-height: 3rem;
+                    // line-height: 3rem;
                     letter-spacing: .2rem;
-                    color: $color-white;
+                    color: $color-cream-2;
                     margin-bottom:2rem;
+                   
+
+
+                    
                     
 
                    
@@ -60,12 +73,20 @@
             .active-slide {
                 position: relative;
                 top:0;
-                bottom:0;
+                bottom:10px;
                 left: 0;
                 right:0;
                 display: block;
                 color: white;
-                @extend %bgc-transparent;
+                background: rgba(51,51,51, 9);
+
+                // color: $color-dark-orange-3;
+                // letter-spacing: .5rem;
+                // background: $color-orange;
+                box-shadow: 5px 5px 0 rgba(0,0,0,0.1);
+                border: 6px solid $color-cream;
+                
+                border-radius: 10px;
             }
         }
         address {
