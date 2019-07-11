@@ -35,27 +35,25 @@ $bp-smallest: 27.5em; //440px
 
 body {
     background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/szablon666.png);
-    // background: linear-gradient(to right, #52c234, #061700);
-    // background: linear-gradient(to right, #fe8c00, #f83600);
-    // background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-    // background: linear-gradient(to right, #141e30, #243b55);
-    // background: -webkit-linear-gradient(to right, #ffefba, #ffffff);
-    // background: -webkit-linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+   
     
-    @media only screen and (max-width: $bp-medium) {                
-        // background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/szablon4x800.png);
-        }
-    @media only screen and (max-width: $bp-small) {                
-        background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/szablon7.png);
-        }
+    // @media only screen and (max-width: $bp-medium) {                
+    //     // background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/szablon4x800.png);
+    //     }
+    // @media only screen and (max-width: $bp-small) {                
+    //     background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/szablon7.png);
+    //     }
     background-repeat: no-repeat;
     background-size:cover;
-    // position: relative;
+    position: relative;
 
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     
+}
+img {
+    overflow: auto;
 }
 
 
@@ -68,6 +66,9 @@ html {
     color: var(--black); // max-width: 1400px;
     // margin: 0 auto;
     text-shadow: 0 2px 0 rgba(0, 0, 0, 0.05); // background: #333333;
+
+    overflow-x:hidden;
+
     @media only screen and (max-width: $bp-largest) {
         font-size: 60%; //1em= 9.6px
     }

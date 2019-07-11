@@ -3,16 +3,14 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/szablon666.png);
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 
-@media only screen and (max-width: 37.5em) {
-  body {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../img/szablon7.png);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/szablon7.png);
-  }
+img {
+  overflow: auto;
 }
 
 html {
@@ -23,6 +21,7 @@ html {
   font-size: 62.5%;
   color: var(--black);
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+  overflow-x: hidden;
 }
 
 @media only screen and (max-width: 75em) {
@@ -505,6 +504,7 @@ h6 {
   .header-text--invitation {
     width: 60vw;
     font-size: 2.5rem;
+    background: rgba(51, 51, 51, 0.8);
   }
 }
 
@@ -1115,7 +1115,7 @@ body.fixed-nav nav {
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
   -ms-flex-line-pack: center;
       align-content: center;
   list-style: none;
@@ -1645,7 +1645,9 @@ section.offer .offer__box .table-third {
 }
 
 .tips-box .slider {
-  aling-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .tips-box .slider .slide {
@@ -1677,6 +1679,7 @@ section.offer .offer__box .table-third {
   line-height: 3rem;
   letter-spacing: .2rem;
   color: #f2e9e1;
+  margin-bottom: 2rem;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -1687,13 +1690,23 @@ section.offer .offer__box .table-third {
 }
 
 .tips-box .slider .active-slide {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: block;
   color: white;
 }
 
 .tips-box address {
   text-align: center;
-  margin-bottom: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding-bottom: 1rem;
 }
 
 .tips-box .slide-dots {
@@ -1703,6 +1716,8 @@ section.offer .offer__box .table-third {
       -ms-grid-row-align: center;
       align-self: center;
   text-align: center;
+  margin-top: 1rem;
+  padding-top: 3rem;
 }
 
 @media only screen and (max-width: 50em) {
@@ -1782,11 +1797,11 @@ section.offer .offer__box .table-third {
 
 section.offer .offer__box table,
 section.offer .offer__box th,
-section.offer .offer__box td {
+section.offer .offer__box td, .tips-box .slider .active-slide {
   background: rgba(51, 51, 51, 0.8);
 }
 
-.header-text--invitation, .tips-box {
+.tips-box {
   z-index: 100;
   padding: .8rem;
   color: #f0e9c1df;
@@ -1796,10 +1811,15 @@ section.offer .offer__box td {
   text-align: center;
   margin: 3rem auto 6rem;
   width: 50%;
-  font-size: 5rem;
-  padding: 2rem;
-  color: #f9a116;
-  letter-spacing: .3rem;
+  font-size: 4rem;
+  padding: 1rem;
+  color: #772F1A;
+  letter-spacing: .5rem;
+  background: #f9a116;
+  -webkit-box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1);
+  border: 6px solid #fff169;
+  border-radius: 10px;
 }
 
 @media only screen and (max-width: 37.5em) {
