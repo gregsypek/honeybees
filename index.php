@@ -35,7 +35,7 @@
             <div class="header__burger">
                 <ul class="header__burger-nav">
                         <li><img src="img/logos2.png" alt="honey_logo" class="logo"></li>
-                        <li><a href="#about">O&nbsp;mnie</a></li>
+                        <li><a href="#about">O&nbsp;nas</a></li>
                         <li><a href="#gallery">Galeria</a></li>
                         <li><a href="#tips">Porady</a></li>
                         <li><a href="#offer">Oferta</a></li>
@@ -325,39 +325,54 @@
 
                 <p class="contact-p left">Wyślij do nas wiadomość</p>
 
-            <form class="contact-left__form" action="mailer.php" method="post">
 
-
-
-                    <?php
-
-
-                    if (isset($_GET['success'])) {
-                    
-                        if ($_GET['success'] == 1) {
-                    
-                           echo "<div class=\"form-messages success\">Dziękuje. Twój email został wysłany.</div>";
-                    
+                <?php
+                    if(isset($_POST['submit'])){
+                        $name = htmlspecialchars(stripslashes(trim($_POST['name'])));
+                        // $subject = htmlspecialchars(stripslashes(trim($_POST['subject'])));
+                        $email = htmlspecialchars(stripslashes(trim($_POST['email'])));
+                        $message = htmlspecialchars(stripslashes(trim($_POST['message'])));
+                        if(!preg_match("/^[A-Za-z .'-]+$/", $name)){
+                        $name_error = 'Niepoprawna nazwa';
                         }
-                    
-                        if ($_GET['success'] == -1) {
-                    
-                           echo "<div class=\"form-messages error\">Niestety! Coś poszło nie tak! Spróbuj jeszcze raz!</div>";
-                    
+                        // if(!preg_match("/^[A-Za-z .'-]+$/", $subject)){
+                        // $subject_error = 'Invalid subject';
+                        // }
+                        if(!preg_match("/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/", $email)){
+                        $email_error = 'Nieprawidłowy adres email';
                         }
-                    
+                        if(strlen($message) === 0){
+                        $message_error = 'Twoja wiadomość nie powinna być pusta';
+                        }
                     }
-                           
-                    ?>
+                ?>
 
-
-
-
+                <form class="contact-left__form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
                 <input type="text" name="name" id="name" placeholder="Twoje imię i nazwisko" required>
-                <input type="email" name="email" placeholder="Twój email" required>
+                <p><?php if(isset($name_error)) echo $name_error; ?></p>
+               
+                
+               
+                <input type="text" name="email"  placeholder="Twój email" required>
+                <p><?php if(isset($email_error)) echo $email_error; ?></p>
+               
                 <textarea rows="8" name="message" placeholder="Treść wiadomości"></textarea>
-                <input type="submit" class="contact-btn  btn-left btn" value="Wyślij">
-            </form>
+                <p><?php if(isset($message_error)) echo $message_error; ?></p>
+                <input type="submit" name="submit" class="contact-btn  btn-left btn" value="Wyślij">
+                <?php 
+                    if(isset($_POST['submit']) && !isset($name_error) && !isset($email_error) && !isset($message_error)){
+                    $to = 'pasieka.koniczynka@gmail.com'; // edit here
+                    $body = " Od: $name\n E-mail: $email\n Wiadomosc:\n $message";
+                    if(mail($to, $message, $body)){
+                        echo '<p style="color: green">Dziękuje. Twój email został wysłany</p>';
+                    }else{
+                        echo '<p>Niestety! Coś poszło nie tak! Spróbuj jeszcze raz!</p>';
+                    }
+                   
+                    }
+                    
+                ?>
+                </form>
 
         </div>
         <div class="contact-right">           
