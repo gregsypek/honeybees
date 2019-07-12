@@ -34,15 +34,13 @@ $bp-smallest: 27.5em; //440px
 
 
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/szablon666.png);
+  
+    background-image: url("../img/t5.png"), linear-gradient(to right, #232526, #414345);
    
-    
-    // @media only screen and (max-width: $bp-medium) {                
-    //     // background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/szablon4x800.png);
-    //     }
-    // @media only screen and (max-width: $bp-small) {                
-    //     background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/szablon7.png);
-    //     }
+   
+    @media only screen and (max-width: $bp-small) {                
+        background-image: url("../img/s5.png"), linear-gradient(to right, #232526, #414345);
+        }
     background-repeat: no-repeat;
     background-size:cover;
     position: relative;

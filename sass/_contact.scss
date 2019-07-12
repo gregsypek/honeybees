@@ -44,8 +44,10 @@
                             "form form"
                             ;   
       .contact-p.left  {
-
+        width: 50%;
+        margin: 0 auto;
         @extend %paragraph;
+        @extend %bgc-transparent;
 
         grid-area: p-1;
         @media only screen and (max-width: $bp-smallest) {                
@@ -127,9 +129,16 @@
 
   }
   &-right {
+
+
+
       display: grid;
       grid-row-gap: 2rem;
       justify-content: center;
+
+
+
+      
       grid-template-areas: 
                           "p-2 p-2"
                           "map map" 
@@ -140,7 +149,10 @@
       .contact-p.right {  
         grid-area: p-2;        
         align-self: top;
-        @extend %paragraph;      
+        @extend %paragraph; 
+
+       
+        @extend %bgc-transparent;     
       }
     .btn-right {
       grid-area: btn-2;

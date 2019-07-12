@@ -372,7 +372,7 @@
     <section class="footer m-top">
         <ul class="footer-nav">
             <li><a href="#">
-                    <img src="img/bee-grey.png" alt="bee-icon" class="bee-grey">
+                    <img src="img/bee-orange.png" alt="bee-icon" class="bee-grey">
                </a></li>
             <li><a href="https://www.facebook.com/katarzyna.zalinska.73">Facebook</a></li>
             <li><a href="https://www.olx.pl/">OLX</a></li>
