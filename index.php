@@ -85,7 +85,7 @@
     
     <section class="about b-top" id="about">
         <div class="hexagon hexagon-about-1 hexagon-image">
-            <img src="img/img2.jpg" alt="img-1">
+            <img src="img/img10.jpg" alt="img-1">
 
         </div>
         <div class="hexagon hexagon-about-2">
@@ -201,11 +201,11 @@
         <div class="hexagon hexagon-gallery-3">
             <img src="img/img3.jpg" alt="img-2">
         </div>
-        <div class="hexagon hexagon-gallery-4">
-            <img src="img/img4.jpg" alt="img-3">
+        <div class="hexagon hexagon-gallery-4 hexagon-empty">
+            <!-- <img src="img/img4.jpg" alt="img-3"> -->
         </div>
-        <div class="hexagon hexagon-gallery-5">
-            <img src="img/img5.jpg" alt="img-4">
+        <div class="hexagon hexagon-gallery-5 hexagon-empty">
+            <!-- <img src="img/img5.jpg" alt="img-4"> -->
         </div>
         <div class="hexagon hexagon-gallery-6">
             <img src="img/img6.jpg" alt="img-5">
@@ -219,8 +219,8 @@
         <div class="hexagon hexagon-gallery-9">
             <img src="img/img9.jpg" alt="img-8">
         </div>
-        <div class="hexagon hexagon-gallery-10">
-            <img src="img/img10.jpg" alt="img-9">
+        <div class="hexagon hexagon-gallery-10 hexagon-empty">
+            <!-- <img src="img/img10.jpg" alt="img-9"> -->
         </div>
         <div class="hexagon hexagon-gallery-11">
             <img src="img/img11.jpg" alt="img-10">
@@ -384,7 +384,7 @@
     <section class="footer m-top">
         <ul class="footer-nav">
             <li><a href="#">
-                    <img src="img/bee-orange.png" alt="bee-icon" class="bee-grey">
+                    <img src="img/bee.png" alt="bee-icon" class="bee-grey">
                </a></li>
             <li><a href="https://www.facebook.com/katarzyna.zalinska.73">Facebook</a></li>
             <li><a href="https://www.olx.pl/">OLX</a></li>

@@ -90,7 +90,13 @@ section.gallery {
         .hexagon {
             position: relative;
             @extend %hexagon;
-            background: linear-gradient(to right bottom, rgba($color-dark-orange, .8), rgba($color-orange, .8));
+
+
+            // background: linear-gradient(to right bottom, rgba($color-dark-orange, .8), rgba($color-orange, .8));
+            background: $color-cream;
+
+
+
             width: 22vw;
             height: 22vw;
             font-size: 3rem;
@@ -109,8 +115,19 @@ section.gallery {
             }
             img {
                 //trick to fit an image into borders
-                width: 100%;
-                height: 100%;
+
+
+                
+                // width: 100%;
+                // height: 100%;
+                position: absolute;
+                top:3%;
+                left:3%;
+                width: 94%;
+                height: 94%;
+                @extend %hexagon;
+
+
                 object-fit: cover;
                 transition: .2s ease-in;
             }
@@ -202,6 +219,25 @@ section.gallery {
                     grid-row: 21/26;
                 }
             }
+
+            &-empty {
+                background: $color-cream;
+                position: relative;
+               
+            }
+            &-empty::after {
+                
+                    position: absolute;
+                    background: $color-orange;
+                    content: '';
+                    top:3%;
+                    left:3%;
+                    width: 94%;
+                    height: 94%;
+                    @extend %hexagon;
+                
+            }
+
 
             
         }
