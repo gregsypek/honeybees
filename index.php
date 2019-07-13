@@ -333,43 +333,41 @@
                         $email = htmlspecialchars(stripslashes(trim($_POST['email'])));
                         $message = htmlspecialchars(stripslashes(trim($_POST['message'])));
                         if(!preg_match("/^[A-Za-z .'-]+$/", $name)){
-                        $name_error = 'Niepoprawna nazwa';
+                        $name_error = '<p class="error">Niepoprawna nazwa</p>';
                         }
-                        // if(!preg_match("/^[A-Za-z .'-]+$/", $subject)){
-                        // $subject_error = 'Invalid subject';
-                        // }
+                       
                         if(!preg_match("/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/", $email)){
-                        $email_error = 'Nieprawidłowy adres email';
+                        $email_error = '<p class="error">Nieprawidłowy adres email</p>';
                         }
                         if(strlen($message) === 0){
-                        $message_error = 'Twoja wiadomość nie powinna być pusta';
+                        $message_error = '<p class="error">Twoja wiadomość nie powinna być pusta</p>';
                         }
                     }
-                ?>
+                    ?>
 
-                <form class="contact-left__form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
-                <input type="text" name="name" id="name" placeholder="Twoje imię i nazwisko" required>
-                <p><?php if(isset($name_error)) echo $name_error; ?></p>
-               
+                    <form class="contact-left__form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
+                    <input type="text" name="name" id="name" placeholder="Twoje imię i nazwisko" required>
+                    <p><?php if(isset($name_error)) echo $name_error; ?></p>
+                    <input type="text" name="email"  placeholder="Twój email" required>
+                    <p><?php if(isset($email_error)) echo $email_error; ?></p>
                 
-               
-                <input type="text" name="email"  placeholder="Twój email" required>
-                <p><?php if(isset($email_error)) echo $email_error; ?></p>
-               
-                <textarea rows="8" name="message" placeholder="Treść wiadomości"></textarea>
-                <p><?php if(isset($message_error)) echo $message_error; ?></p>
-                <input type="submit" name="submit" class="contact-btn  btn-left btn" value="Wyślij">
-                <?php 
-                    if(isset($_POST['submit']) && !isset($name_error) && !isset($email_error) && !isset($message_error)){
-                    $to = 'pasieka.koniczynka@gmail.com'; // edit here
-                    $body = " Od: $name\n E-mail: $email\n Wiadomosc:\n $message";
-                    if(mail($to, $message, $body)){
-                        echo '<p style="color: green">Dziękuje. Twój email został wysłany</p>';
-                    }else{
-                        echo '<p>Niestety! Coś poszło nie tak! Spróbuj jeszcze raz!</p>';
+                    <textarea rows="8" name="message" placeholder="Treść wiadomości"></textarea>
+                    <p><?php if(isset($message_error)) echo $message_error; ?></p>
+                    <input type="submit" name="submit" class="contact-btn  btn-left btn" value="Wyślij">
+                    <?php 
+
+                        if(isset($_POST['submit']) && !isset($name_error) && !isset($email_error) && !isset($message_error)){
+                        $to = 'pasieka.koniczynka@gmail.com'; // edit here
+                        $body = " Od: $name\n E-mail: $email\n Wiadomosc:\n $message";
+                        if(mail($to, $message, $body)){
+                            // header("Location: index.php?success=1#contact");
+                            echo '<p class="success">Dziękuje. Twój email został wysłany</p>';
+                        }else{
+                            echo '<p class ="error">Niestety! Coś poszło nie tak! Spróbuj jeszcze raz!</p>';
                     }
+                }
                    
-                    }
+                    
                     
                 ?>
                 </form>

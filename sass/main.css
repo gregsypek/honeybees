@@ -619,6 +619,7 @@ body.fixed-nav nav {
 
 .contact .success {
   background-color: rgba(193, 236, 50, 0.8);
+  margin-top: 1rem;
 }
 
 .contact .error {
@@ -748,6 +749,10 @@ body.fixed-nav nav {
   }
 }
 
+.contact-left__form > p {
+  margin: .2rem;
+}
+
 .contact-right {
   display: -ms-grid;
   display: grid;
@@ -763,9 +768,9 @@ body.fixed-nav nav {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: p-2;
-  -ms-flex-item-align: top;
-      -ms-grid-row-align: top;
-      align-self: top;
+  -ms-flex-item-align: bottom;
+      -ms-grid-row-align: bottom;
+      align-self: bottom;
 }
 
 .contact-right .btn-right {
@@ -814,6 +819,17 @@ body.fixed-nav nav {
   .contact-p {
     font-size: 1.2em;
   }
+}
+
+.contact input[type="submit"]:hover,
+.contact a.contact-btn:hover {
+  background-color: #b45a11;
+}
+
+.contact input[type="submit"]:active,
+.contact a.contact-btn:active {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
 }
 
 .about {
