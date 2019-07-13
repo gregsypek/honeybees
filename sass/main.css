@@ -11,8 +11,8 @@ body {
 
 @media only screen and (max-width: 37.5em) {
   body {
-    background-image: url("../img/s5.png"), -webkit-gradient(linear, left top, right top, from(#232526), to(#414345));
-    background-image: url("../img/s5.png"), linear-gradient(to right, #232526, #414345);
+    background-image: url("../img/s6.png"), -webkit-gradient(linear, left top, right top, from(#232526), to(#414345));
+    background-image: url("../img/s6.png"), linear-gradient(to right, #232526, #414345);
   }
 }
 
@@ -526,7 +526,7 @@ h6 {
 }
 
 .header-text .header-bee img {
-  margin-top: 4rem;
+  margin-top: 2rem;
   height: 4.5rem;
   width: auto;
   background-color: transparent;
