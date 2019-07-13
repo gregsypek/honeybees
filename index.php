@@ -84,14 +84,13 @@
     </section>
     
     <section class="about b-top" id="about">
-        <div class="hexagon hexagon-about-1">
+        <div class="hexagon hexagon-about-1 hexagon-image">
             <img src="img/img2.jpg" alt="img-1">
 
         </div>
         <div class="hexagon hexagon-about-2">
             <h1>Kilka słów o nas</h1>
-            <p>Mamy duże doświadczenie w hodowli pszczół. Nasz miód wyróżnia się wysoką jakością. Mamy łącznie 50 uli
-                 a nasz miód znajduje uznanie wsród klientów.</p>
+            <p>Mamy duże doświadczenie w hodowli pszczół. Nasz miód wyróżnia się wysoką jakością i znajduje spore uznanie wsród klientów.</p>
         </div>
         <div class="hexagon hexagon-about-3">
             <h1>Produkt polski </h1>
@@ -102,10 +101,10 @@
             <h1>Sama natura</h1>
             <p>Nie słodzimy nie poprawiamy nie psujemy. Wszystko odbywa sie w naturalny sposób. Pszczoły wiedzą co dobre!</p>
         </div>
-        <div class="hexagon hexagon-about-5">
+        <div class="hexagon hexagon-about-5 hexagon-image">
             <img src="img/img3.jpg" alt="img-3">
         </div>
-        <div class="hexagon hexagon-about-6">
+        <div class="hexagon hexagon-about-6 hexagon-image">
             <img src="img/img17.jpg" alt="img-3">
         </div>
 
@@ -283,7 +282,7 @@
                     </tr>
                     <tr>
                         <td>do 10kg</td>
-                        <td>3-5kg</td>
+                        <td>3-5</td>
                         <td>26zł</td>
                         <td>30zł</td>
                     </tr>

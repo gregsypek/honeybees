@@ -29,7 +29,9 @@
     .hexagon {
         position: relative; // margin: 4rem;
         @extend %hexagon;
-        background: linear-gradient(to bottom, rgba($color-orange, 1), rgba($color-dark-orange, 1)); 
+        // background: linear-gradient(to bottom, rgba($color-orange, 1), rgba($color-dark-orange, 1)); 
+        background: $color-cream;
+        // background: linear-gradient(to bottom, rgba($color-orange, 1), rgba($color-dark-orange, 1)); 
         width: 35vw;
         height: 35vw;
         font-size: 3rem;
@@ -58,7 +60,7 @@
             width: auto;
             height: 100%;
             background-size: cover;
-            background-origin: center; // box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 1);
+            background-origin: center; 
         }
 
         &-about-1 {
@@ -117,10 +119,10 @@
             position: absolute;
             top: 9rem;
             left: 15.5rem;
-            color: $color-cream;
+            color: $color-dark-orange-3;
             
             @media only screen and (max-width: $bp-big) {
-               left: 11.5rem; 
+               left: 9rem; 
             }
             @media only screen and (max-width: $bp-largest) {
                left: 8.5rem; 
@@ -135,7 +137,7 @@
                 left: 7rem;          
             }
             @media only screen and (max-width: $bp-smallest) {                
-                top: 4rem;   
+                top: 5rem;   
                 left: 6.5rem; 
             }
            
@@ -146,7 +148,7 @@
             padding: 1rem;
             font-size: 2.5rem;
             color: $color-brown-2;
-            top: 15rem;
+            top: 14rem;
             left: 2rem;
             letter-spacing: .2rem;
             // text-shadow: 0 0 2px rgba(0,0, 0, .8);
@@ -163,14 +165,54 @@
             left: 2rem;     
             }
             @media only screen and (max-width: $bp-small) {                
-                top: 10rem;
-                font-size: 1.7rem;  
+                top: 9rem;
+                font-size: 1.8rem;  
             }
             @media only screen and (max-width: $bp-smallest) {                
-                top: 7rem;
+                top: 9rem;
                 padding: .2rem;
             }
             
         }
+    }
+    .hexagon::before {
+        content: '';
+        width: 33vw;
+        height: 33vw;
+        clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+        background: linear-gradient(to bottom, rgba($color-orange, 1), rgba($color-dark-orange, 1)); 
+        display: block;
+        position: absolute;
+        top: 1vw;
+        left: 1vw;
+
+        @media only screen and (max-width: $bp-medium) {                
+            width: 48vw;
+            height:48vw;
+           
+        }
+        @media only screen and (max-width: $bp-small) {                
+            width: 53vw;
+            height:53vw;
+           
+        }
+        @media only screen and (max-width: $bp-smallest) {                
+            width: 61vw;
+            height:61vw;
+           
+        }
+        
+    }
+    .hexagon-image::before {
+        content: '';
+        width: 33vw;
+        height: 33vw;
+        clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+        background: transparent; 
+        display: block;
+        position: absolute;
+        top: 1vw;
+        left: 1vw;
+
     }
 }

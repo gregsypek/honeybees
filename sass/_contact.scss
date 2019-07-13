@@ -23,6 +23,7 @@
      .phone {     
       height: 6rem; 
       font-size: 2.5rem;
+      @extend %shadow;
       @media only screen and (max-width: $bp-small) {                
         width: 27rem; 
         font-size: 2rem;
