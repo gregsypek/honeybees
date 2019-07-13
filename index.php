@@ -49,7 +49,7 @@
         </nav>
         <div class="header__slider">
         <ul class="header__slider-nav">
-            <li><a href="#about">O&nbsp;mnie</a></li>
+            <li><a href="#about">O&nbsp;nas</a></li>
             <li><a href="#gallery">Galeria</a></li>
             <li><a href="#tips">Porady</a></li>
             <li><a href="#offer">Oferta</a></li>

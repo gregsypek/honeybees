@@ -1142,8 +1142,7 @@ body.fixed-nav nav {
   height: 33vw;
   -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
           clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-  background: -webkit-gradient(linear, left top, left bottom, from(#f9a116), to(#e06c0d));
-  background: linear-gradient(to bottom, #f9a116, #e06c0d);
+  background: #f9a116;
   display: block;
   position: absolute;
   top: 1vw;
@@ -1152,22 +1151,28 @@ body.fixed-nav nav {
 
 @media only screen and (max-width: 50em) {
   .about .hexagon::before {
-    width: 48vw;
-    height: 48vw;
+    width: 46vw;
+    height: 46vw;
+    top: 2vw;
+    left: 2vw;
   }
 }
 
 @media only screen and (max-width: 37.5em) {
   .about .hexagon::before {
-    width: 53vw;
-    height: 53vw;
+    width: 51vw;
+    height: 51vw;
+    top: 2vw;
+    left: 2vw;
   }
 }
 
 @media only screen and (max-width: 27.5em) {
   .about .hexagon::before {
-    width: 61vw;
-    height: 61vw;
+    width: 59vw;
+    height: 59vw;
+    top: 2vw;
+    left: 2vw;
   }
 }
 
