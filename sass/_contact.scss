@@ -89,11 +89,12 @@
           }
             input,
             textarea {
-            background: $color-cream-2;
+            background: $color-orange;
             padding: 1.5rem;
             font-family: inherit;
             font-size: 2rem;
-            border: 2px solid #ccc;
+            // border: 2px solid #ccc;
+            // border: 6px solid $color-cream;
             }
 
             input[type="text"],
@@ -103,12 +104,13 @@
             textarea,
              {
               border-radius: 3px;
-              border: 4px solid transparent;   
+              border: 5px solid $color-cream;
+              margin: 0 0 1rem;   
               // margin-top:3rem;     
             }
             textarea:focus,
             input:focus {
-              border: 4px solid $color-cream-2;
+              border: 5px solid $color-cream-dark;
             }
               *:focus {
                 outline: none;  
@@ -140,7 +142,7 @@
   &-right {
 
 
-
+    
       display: grid;
       grid-row-gap: 2rem;
       justify-content: center;
@@ -174,6 +176,9 @@
     }
     .map {
       grid-area: map;
+      border:8px solid $color-cream;
+      border-radius: 5%;
+      background: $color-cream;
  
     }
     .map-google {

@@ -19,14 +19,16 @@ section.offer {
     }
 
     th {
-        // background: $color-dark-orange;
+       
         background: $color-cream;
         color: $color-dark-orange-3;
-        // text-transform: uppercase;
+      
         letter-spacing: 1rem;
         font-size: 4rem;
+       
+        box-shadow: inset 0 0 1em $color-orange;
         
-            border-radius: 35%;
+            // border-radius: 25%;
         
         
      

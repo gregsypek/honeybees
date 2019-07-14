@@ -173,7 +173,7 @@ h6 {
 }
 
 .header__top {
-  color: #f9a116;
+  color: #fda921;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
 }
 
@@ -220,7 +220,6 @@ h6 {
   background: #333;
   -ms-flex-line-pack: center;
       align-content: center;
-  padding: .5rem;
 }
 
 .header__burger {
@@ -254,7 +253,7 @@ h6 {
 
 .header__burger li {
   display: inline-block;
-  padding: .5rem 1.5rem;
+  padding: 1.5rem;
   margin-left: 8rem;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
@@ -307,13 +306,14 @@ h6 {
 }
 
 .header__burger li:hover a {
-  color: #f9a116;
+  color: #fda921;
 }
 
 .header__burger .logo {
-  height: 5rem;
+  height: 6rem;
   width: auto;
   margin-right: 5rem;
+  padding: 0;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -417,7 +417,7 @@ h6 {
   display: block;
   padding: 2rem;
   font-size: 3rem;
-  color: #f9a116;
+  color: #fda921;
   text-decoration: none;
 }
 
@@ -514,7 +514,7 @@ h6 {
 @media only screen and (max-width: 37.5em) {
   .header-text--invitation {
     width: 60vw;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-right: -3rem;
   }
 }
@@ -711,11 +711,10 @@ body.fixed-nav nav {
 
 .contact-left__form input,
 .contact-left__form textarea {
-  background: #f0e9c1df;
+  background: #fda921;
   padding: 1.5rem;
   font-family: inherit;
   font-size: 2rem;
-  border: 2px solid #ccc;
 }
 
 .contact-left__form input[type="text"],
@@ -723,12 +722,13 @@ body.fixed-nav nav {
 .contact-left__form input[type="submit"] select,
 .contact-left__form textarea {
   border-radius: 3px;
-  border: 4px solid transparent;
+  border: 5px solid #fff169;
+  margin: 0 0 1rem;
 }
 
 .contact-left__form textarea:focus,
 .contact-left__form input:focus {
-  border: 4px solid #f0e9c1df;
+  border: 5px solid #f5dc00;
 }
 
 .contact-left__form *:focus {
@@ -794,6 +794,9 @@ body.fixed-nav nav {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: map;
+  border: 8px solid #fff169;
+  border-radius: 5%;
+  background: #fff169;
 }
 
 .contact-right .map-google {
@@ -1142,7 +1145,7 @@ body.fixed-nav nav {
   height: 33vw;
   -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
           clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-  background: #f9a116;
+  background: #fda921;
   display: block;
   position: absolute;
   top: 1vw;
@@ -1217,13 +1220,13 @@ body.fixed-nav nav {
 .footer-nav a {
   display: block;
   text-decoration: none;
-  color: #f9a116;
+  color: #fda921;
   -webkit-transition: color .2s ease;
   transition: color .2s ease;
 }
 
 .footer-nav a:hover {
-  color: #888;
+  color: #fff169;
 }
 
 .footer p {
@@ -1602,7 +1605,7 @@ section.gallery .gallery__box .hexagon-empty {
 
 section.gallery .gallery__box .hexagon-empty::after {
   position: absolute;
-  background: #f9a116;
+  background: #fda921;
   content: '';
   top: 3%;
   left: 3%;
@@ -1625,7 +1628,7 @@ section.offer .offer__box {
           justify-content: center;
   justify-items: center;
   font-size: 3rem;
-  color: #f9a116;
+  color: #fda921;
 }
 
 @media only screen and (max-width: 75em) {
@@ -1645,7 +1648,8 @@ section.offer .offer__box th {
   color: #772F1A;
   letter-spacing: 1rem;
   font-size: 4rem;
-  border-radius: 35%;
+  -webkit-box-shadow: inset 0 0 1em #fda921;
+          box-shadow: inset 0 0 1em #fda921;
 }
 
 @media only screen and (max-width: 50em) {
@@ -1657,7 +1661,7 @@ section.offer .offer__box th {
 section.offer .offer__box table {
   -webkit-box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1);
-  background: #f9a116;
+  background: #fda921;
   color: #1c140d;
 }
 
@@ -1748,7 +1752,7 @@ section.offer .offer__box .table-third {
   padding: 1rem;
   color: #772F1A;
   letter-spacing: .5rem;
-  background: #f9a116;
+  background: #fda921;
   -webkit-box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1);
   border: 6px solid #fff169;
@@ -1978,7 +1982,7 @@ section.offer .offer__box .table-third {
   padding: 1rem;
   color: #772F1A;
   letter-spacing: .5rem;
-  background: #f9a116;
+  background: #fda921;
   -webkit-box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1);
   border: 6px solid #fff169;
