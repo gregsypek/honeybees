@@ -20,12 +20,13 @@ section.offer {
 
     th {
        
-        background: $color-cream;
-        color: $color-dark-orange-3;
+        // background: $color-cream;
+        background: rgba(51,51,51, 9);
+        color: $color-orange;
         letter-spacing: 1rem;
         font-size: 4rem;
        
-        box-shadow: inset 1rem 1rem 8rem $color-orange;
+        // box-shadow: inset 1rem 1rem 8rem $color-orange;
         
             // border-radius: 25%;
         @media only screen and (max-width: $bp-medium) {      font-size: 3rem;
