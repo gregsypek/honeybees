@@ -192,17 +192,18 @@
             </div>
         </div>
 
+        
         <div class="hexagon hexagon-gallery-1">
-            <img src="img/img1.jpg" alt="img-1">
+            <img src="img/img2.jpg" alt="img-2">
         </div>
         <div class="hexagon hexagon-gallery-2">
-            <img src="img/img2.jpg" alt="img-2">
+            <img src="img/img1.jpg" alt="img-1">
         </div>
         <div class="hexagon hexagon-gallery-3">
             <img src="img/img3.jpg" alt="img-2">
         </div>
-        <div class="hexagon hexagon-gallery-4 hexagon-empty">
-            <!-- <img src="img/img4.jpg" alt="img-3"> -->
+        <div class="hexagon hexagon-gallery-4">
+            <img src="img/img7.jpg" alt="img-3">
         </div>
         <div class="hexagon hexagon-gallery-5 hexagon-empty">
             <!-- <img src="img/img5.jpg" alt="img-4"> -->
@@ -210,8 +211,8 @@
         <div class="hexagon hexagon-gallery-6">
             <img src="img/img6.jpg" alt="img-5">
         </div>
-        <div class="hexagon hexagon-gallery-7">
-            <img src="img/img7.jpg" alt="img-6">
+        <div class="hexagon hexagon-gallery-7  hexagon-empty">
+            <!-- <img src="img/img7.jpg" alt="img-6"> -->
         </div>
         <div class="hexagon hexagon-gallery-8">
             <img src="img/img8.jpg" alt="img-7">

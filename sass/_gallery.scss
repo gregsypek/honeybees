@@ -225,6 +225,7 @@ section.gallery {
                 position: relative;
                
             }
+            
             &-empty::after {
                 
                     position: absolute;
@@ -240,6 +241,16 @@ section.gallery {
 
 
             
+        }
+
+       
+        .hexagon-gallery-7.hexagon-empty, 
+        .hexagon-gallery-2 {
+            // display:block;
+            @media only screen and (max-width: $bp-smallest) {                
+                display:none;
+            }
+        
         }
         
     }

@@ -4,7 +4,23 @@
     display: flex;
     flex-direction: column;
     .tips__header {
-        @extend %header;
+        text-align: center;
+        margin: 3rem auto 13rem;
+        width: 33%;
+        font-size: 4rem;
+        padding: 1rem;
+        color: $color-dark-orange-3;
+        letter-spacing: .5rem;
+        background: $color-orange;
+        box-shadow: 5px 5px 0 rgba(0,0,0,0.1);
+        border: 6px solid $color-cream;
+        border-radius: 10px;
+        @media only screen and (max-width: $bp-small) {                
+          font-size: 3.5rem;
+          margin: 1rem auto 10rem;
+          width: 50%;
+          letter-spacing: .3rem;
+      }
      }
 
      span.underlain {
