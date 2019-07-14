@@ -2,13 +2,12 @@
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
 
-
 %btn {
     // font-size: 2.5rem;
       letter-spacing: .3rem;
       font-family: inherit;
     //   width: 20rem;
-      padding: 1.5rem;
+      padding: 1.5rem 3rem;
       justify-self: center;
       border: none;
       text-transform: uppercase;
@@ -17,14 +16,6 @@
       border-radius: 4px;
 }
 
-%paragraph {
-    text-align: center;
-    
-    // margin-bottom: 15px;
-    text-transform: uppercase;
-    letter-spacing: .3rem;
-    color: $color-cream-2;
-}
 
 %bgc-transparent {
   background: rgba(51,51,51, 0.8);
@@ -55,6 +46,20 @@
     width: 50%;
     letter-spacing: .3rem;
 }
+}
+%header-small {
+  background: rgba(51,51,51, 9);
+  font-size: 2.5rem;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  @extend %shadow;
+  padding: .5rem 1.5rem;
+  border: 4px solid $color-cream;
+  color: $color-cream-2;
+  border-radius: 10px;
+  
 }
 %shadow {
   box-shadow: 5px 5px 0 rgba(0,0,0,0.1);

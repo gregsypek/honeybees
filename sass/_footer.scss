@@ -22,10 +22,10 @@ li  {
 a {
     display: block;
     text-decoration: none;
-    color: $color-orange;
+    color: $color-cream;
     transition: color .2s ease;
     &:hover {
-    color: $color-cream;
+    color: $color-orange;
     }
 }
 
